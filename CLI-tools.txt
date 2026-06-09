@@ -1,0 +1,35 @@
+1. Terminal + Shell
+   ----------------
+        Windows Terminal
+        PowerShell 7
+        PSReadLine (Predictive IntelliSense / History suggestions)
+
+2. Terminal UI / Prompt
+   --------------------
+        Starship (modern shell prompt)
+
+3. Command Line Productivity
+   -------------------------
+        fzf (fuzzy search + history search + interactive filtering)
+        ripgrep (rg) (fast text search inside files)
+        fd (fast file finder)
+
+4. Git Tools
+   ---------
+        Git
+        LazyGit (TUI Git manager) (Inside Neovim but works without neovim opened)
+
+5. AI / Coding Assistants (CLI / Editor)
+   -------------------------------------
+        OpenCode (CLI AI coding agent)
+        GitHub Copilot (Neovim plugin via copilot.lua)
+
+6. Compiler / Build Tools
+   ----------------------
+        GCC / G++ (via MSYS2 installation)
+        MSYS2 toolchain (C/C++ environment)
+
+7. Editor Ecosystem
+   ----------------
+Neovim
+lazy.nvim (plugin manager)

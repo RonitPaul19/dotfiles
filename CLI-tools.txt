@@ -14,6 +14,7 @@
         ripgrep (rg) (fast text search inside files)
         fd (fast file finder)
         zoxide (better cd command)
+        eza (better ls command)
 
 4. Git Tools
    ---------

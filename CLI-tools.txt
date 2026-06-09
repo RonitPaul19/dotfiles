@@ -13,6 +13,7 @@
         fzf (fuzzy search + history search + interactive filtering)
         ripgrep (rg) (fast text search inside files)
         fd (fast file finder)
+        zoxide (better cd command)
 
 4. Git Tools
    ---------

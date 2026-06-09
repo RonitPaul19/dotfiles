@@ -1,2 +1,4 @@
 Clear-Host
-Invoke-Expression (&starship init powershell)
+starship init powershell | Invoke-Expression
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView

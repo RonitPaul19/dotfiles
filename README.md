@@ -1,132 +1,162 @@
 # 🚀 My Developer Setup
 
-A terminal-first development environment focused on speed, keyboard-driven workflows, and minimal resource usage.
+## 1. Terminal + Shell
 
----
-
-## 🖥️ Terminal
-
-### Windows Terminal
-
-#### Shell
+- Windows Terminal
 - PowerShell 7
-
-#### Enhancements
 - PSReadLine
   - Predictive IntelliSense
   - History Suggestions
   - ListView Completion Menu
 
-#### Prompt
+---
+
+## 2. Terminal UI / Prompt
+
 - Starship
-  - Git Status
-  - Language Detection
-  - Custom Prompt
+  - Modern shell prompt
+  - Git integration
+  - Language detection
+  - Customizable modules
 
-#### CLI Productivity Tools
+---
+
+## 3. Command Line Productivity
+
 - fzf
-  - Fuzzy Search
-  - History Search
-  - Interactive Filtering
-
-- fd
-  - Fast File Finding
+  - Fuzzy search
+  - History search
+  - Interactive filtering
 
 - ripgrep (rg)
-  - Fast Content Search
+  - Fast content search
 
-#### Customizations
-- Custom aliases
-- PowerShell scripts
+- fd
+  - Fast file finder
 
----
+- zoxide
+  - Smarter `cd`
+  - Frecency-based navigation
 
-## 🤖 AI
-
-### OpenCode
-- Agent Mode
-- Code Generation
-- Terminal Workflow
-
-### GitHub Copilot CLI
+- eza
+  - Better `ls`
+  - Icons
+  - Git status support
+  - Tree view
 
 ---
 
-## 🔨 Development Toolchains
+## 4. Git Tools
+
+- Git
+
+- LazyGit
+  - TUI Git manager
+  - Commits
+  - Branches
+  - Rebases
+  - Stashes
+  - Diffs
+
+> Integrated with Neovim but can also run independently from any terminal.
+
+---
+
+## 5. AI / Coding Assistants
+
+- OpenCode
+  - CLI AI coding agent
+
+- GitHub Copilot
+  - Neovim integration
+  - Ghost text suggestions
+  - AI-assisted coding
+
+---
+
+## 6. Compiler / Build Tools
 
 ### C / C++
+
 - GCC
 - G++
 
 ### Environment
-- MSYS2
+
+- MSYS2 Toolchain
 
 ### Other Languages
+
 - Python
 - Node.js
 - npm
 
 ---
 
-## 🌿 Git Workflow
+## 7. Editor Ecosystem
 
-### Git
+### Neovim
 
-### LazyGit
-- Commits
-- Branches
-- Rebases
-- Stashes
-- Diffs
+#### Plugin Manager
 
----
-
-## 📝 Neovim
-
-### Plugin Manager
 - lazy.nvim
 
-### UI
-- Alpha
-- Bufferline
-- Lualine
-- Rose Pine
-- Dressing.nvim
-- Vim Maximizer
+#### Dashboard
 
-### Navigation
-- Nvim Tree
-- Telescope
+- alpha.nvim
 
-### Syntax Engine
-- Treesitter
-- Treesitter Textobjects
-- Treesitter Playground
+#### UI
 
-### Editing
+- bufferline.nvim
+- lualine.nvim
+- rose-pine
+- dressing.nvim
+- vim-maximizer
+
+#### File Navigation
+
+- nvim-tree.lua
+- telescope.nvim
+
+#### Syntax & Parsing
+
+- nvim-treesitter
+- nvim-treesitter-textobjects
+- treesitter-playground
+
+#### Completion & Snippets
+
 - nvim-cmp
+- cmp-nvim-lsp
 - LuaSnip
+- cmp_luasnip
+
+#### Editing Experience
+
 - nvim-autopairs
 
-### Development
+#### Development
+
 - LSP
   - clangd
   - pyright
   - ts_ls
 
-- Conform.nvim
-- Code Runner
+- conform.nvim
+- code_runner.nvim
 
-### Git
-- Gitsigns
-- LazyGit Integration
+#### Git Integration
 
-### Terminal
-- ToggleTerm
+- gitsigns.nvim
+- lazygit.nvim
+
+#### Terminal Integration
+
+- toggleterm.nvim
 
 ---
 
-## 🎯 Workflow
+## Workflow
 
 ```text
 GlazeWM
@@ -137,16 +167,16 @@ PowerShell + Starship
     ↓
 Neovim
     ↓
-OpenCode / Copilot CLI
+OpenCode / Copilot
     ↓
-GCC / Python / Node
+GCC / Python / Node.js
     ↓
 LazyGit
 ```
 
 ---
 
-## 💡 Philosophy
+## Philosophy
 
 - Terminal-first
 - Keyboard-driven

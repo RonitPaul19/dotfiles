@@ -64,13 +64,8 @@
 
 ## 5. AI / Coding Assistants
 
-- OpenCode
-  - CLI AI coding agent
-
-- GitHub Copilot
-  - Neovim integration
-  - Ghost text suggestions
-  - AI-assisted coding
+- OpenCode CLI
+- GitHub Copilot CLI
 
 ---
 

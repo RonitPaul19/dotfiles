@@ -154,8 +154,6 @@
 ## Workflow
 
 ```text
-GlazeWM
-    ↓
 Windows Terminal
     ↓
 PowerShell + Starship

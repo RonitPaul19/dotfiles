@@ -24,7 +24,7 @@
 5. AI / Coding Assistants (CLI / Editor)
    -------------------------------------
         OpenCode (CLI AI coding agent)
-        GitHub Copilot (Neovim plugin via copilot.lua)
+        GitHub Copilot
 
 6. Compiler / Build Tools
    ----------------------

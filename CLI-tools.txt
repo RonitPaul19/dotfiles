@@ -33,5 +33,9 @@
 
 7. Editor Ecosystem
    ----------------
-Neovim
-lazy.nvim (plugin manager)
+        Neovim
+        lazy.nvim (plugin manager)
+
+8. Status Bar and windows tiling manager
+        GlazeWM
+        YASB

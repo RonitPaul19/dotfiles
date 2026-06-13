@@ -88,14 +88,14 @@
 
 ---
 
-### Status bar and window manager
+### 7. Status bar and window manager
 
 - Glazewm (Widow tiling manager)
 - YASB (Status Bar)
 
 ---
 
-## 7. Editor Ecosystem
+## 8. Editor Ecosystem
 
 ### Neovim
 

@@ -2,3 +2,4 @@ Clear-Host
 starship init powershell | Invoke-Expression
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
+Invoke-Expression (& { (zoxide init powershell | Out-String) })

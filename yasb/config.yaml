@@ -96,8 +96,8 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "{%I:%M:%S}"
-      label_alt: "{%I:%M:%S}"
+      label: "{%I:%M}"
+      label_alt: "{%I:%M}"
       timezones: []
       callbacks:
         on_left: "toggle_calendar"

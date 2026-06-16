@@ -35,18 +35,14 @@ bars:
       right: 6
     widgets:
       left: [
-        "glazewm_tiling_direction",
         "glazewm_workspaces",
-        "pomodoro",
         "active_window"
       ]
       center: [
         "clock"
       ]
       right: [
-        "microphone",
         "volume",
-        "notifications",
         "power_menu"
         ]
 widgets:

@@ -1,2 +1,18 @@
-# add this inside C:/Users/<UserName>/.config/starship.toml
-format = '📂 $directory'
+format = "$directory$git_branch$git_status$python$character"
+
+[directory]
+format = "📂 $path "
+truncate_to_repo = false
+
+[git_branch]
+format = "🌿 $branch "
+
+[git_status]
+format = "[$all_status$ahead_behind]($style) "
+
+[python]
+format = "🐍 ($virtualenv) "
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"

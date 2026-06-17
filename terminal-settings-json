@@ -72,7 +72,7 @@
                 "cellHeight": "1.5",
                 "colorGlyphs": true,
                 "face": "DankMono Nerd Font",
-                "size": 16
+                "size": 17
             },
             "intenseTextStyle": "all",
             "opacity": 92,
@@ -183,4 +183,3 @@
     "themes": [],
     "useAcrylicInTabRow": true
 }
-

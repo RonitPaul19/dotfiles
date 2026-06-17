@@ -16,33 +16,26 @@ bars:
       enabled: true
       duration: 1000
     blur_effect:
-      enabled: true
-      acrylic: false
-      dark_mode: true
-      round_corners: true
-      round_corners_type: "normal"
-      border_color: "System"
+      enabled: false
     window_flags:
       always_on_top: false
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 32
+      height: 24
     padding:
-      top: 6
-      left: 6
+      top: 0
+      left: 0
       bottom: 0
-      right: 6
+      right: 0
     widgets:
       left: [
         "glazewm_workspaces",
-        "active_window"
       ]
       center: [
         "clock"
       ]
       right: [
-        "volume",
         "power_menu"
         ]
 widgets:
@@ -223,10 +216,10 @@ widgets:
       hide_if_offline: true
 
       # Workspace display labels (matching komorebi's label_workspace_btn and label_workspace_active_btn)
-      populated_label: "\udb85\udcfc"
-      empty_label: "\udb85\udcfc"
-      active_populated_label: "\udb85\udcfb"
-      active_empty_label: "\udb85\udcfb"
+      populated_label: "{name}"
+      empty_label: "{name}"
+      active_populated_label: "{name}"
+      active_empty_label: "{name}"
 
       # Workspace management (matching komorebi's hide_empty_workspaces)
       hide_empty_workspaces: false

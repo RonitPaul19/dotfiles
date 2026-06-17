@@ -4,7 +4,7 @@
     "actions":
     [
         {
-            "command":
+            "command": 
             {
                 "action": "copy",
                 "singleLine": false
@@ -62,6 +62,7 @@
     {
         "defaults":
         {
+            "background": "#191521",
             "colorScheme": "Catppuccin Mocha",
             "cursorShape": "filledBox",
             "experimental.retroTerminalEffect": false,
@@ -70,11 +71,11 @@
                 "builtinGlyphs": true,
                 "colorGlyphs": true,
                 "face": "JetBrainsMono Nerd Font Mono",
-                "size": 17
+                "size": 15
             },
             "intenseTextStyle": "all",
-            "acrylicOpacity": 0.4,
-            "useAcrylic": true
+            "opacity": 92,
+            "useAcrylic": false
         },
         "list":
         [

@@ -4,7 +4,7 @@
     "actions":
     [
         {
-            "command": 
+            "command":
             {
                 "action": "copy",
                 "singleLine": false
@@ -69,13 +69,15 @@
             "font":
             {
                 "builtinGlyphs": true,
+                "cellHeight": "1.5",
                 "colorGlyphs": true,
-                "face": "JetBrainsMono Nerd Font Mono",
-                "size": 15
+                "face": "DankMono Nerd Font",
+                "size": 16
             },
             "intenseTextStyle": "all",
             "opacity": 92,
-            "useAcrylic": false
+            "padding": "8,8,8,0",
+            "useAcrylic": true
         },
         "list":
         [
@@ -181,3 +183,4 @@
     "themes": [],
     "useAcrylicInTabRow": true
 }
+

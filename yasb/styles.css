@@ -11,6 +11,9 @@
 	padding: 0;
 	margin: 0;
 	background-color: #1e1e2e;
+	border-radius: 6px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 }
 
 .widget {
@@ -36,35 +39,38 @@
 }
 
 .glazewm-workspaces .ws-btn {
-	font-weight: 700;
-	font-size: 13px;
-	background-color: transparent;
+	font-size: 0;
+	width: 12px;
+	height: 6px;
+	background-color: #585b70;
 	border: none;
-	padding: 0 6px 0 6px;
-	margin: 0;
-	color: #95a0ad;
+	border-radius: 3px;
+	padding: 0;
+	margin: 0 3px;
 }
 
 .glazewm-workspaces .ws-btn.active_populated {
-	color: #89dceb;
+	background-color: #89dceb;
+	width: 32px;
 }
 
 .glazewm-workspaces .ws-btn.active_empty {
-	color: #89dceb;
+	background-color: #89dceb;
+	width: 32px;
 }
 
 .glazewm-workspaces .ws-btn.populated {
-	color: #6c7086;
+	background-color: #585b70;
 }
 
 .glazewm-workspaces .ws-btn.empty {
-	color: #6c7086;
+	background-color: #313244;
 }
 
 .glazewm-workspaces .ws-btn:hover,
 .glazewm-workspaces .ws-btn.populated:hover,
 .glazewm-workspaces .ws-btn.empty:hover {
-	color: #89b4fa;
+	background-color: #89b4fa;
 }
 
 .glazewm-tiling-direction {
@@ -159,8 +165,16 @@
 	font-size: 16px;
 }
 
+.volume-widget {
+	color: #f9e2af;
+}
+
+.volume-widget .label {
+	color: #f9e2af;
+}
+
 .volume-widget .icon {
-	color: #89b4fa;
+	color: #f9e2af;
 	margin: 1px 2px 0 0;
 }
 
@@ -172,6 +186,32 @@
 .clock-widget .icon {
 	color: #cba6f7;
 	font-size: 14px;
+}
+
+/* WIFI WIDGET */
+.wifi-widget {
+	color: #a6e3a1;
+}
+
+.wifi-widget .label {
+	color: #a6e3a1;
+}
+
+.wifi-widget .icon {
+	color: #a6e3a1;
+}
+
+/* BATTERY WIDGET */
+.battery-widget {
+	color: #89dceb;
+}
+
+.battery-widget .label {
+	color: #89dceb;
+}
+
+.battery-widget .icon {
+	color: #89dceb;
 }
 
 /* WEATHER WIDGET */

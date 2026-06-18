@@ -44,14 +44,14 @@ gaps:
   scale_with_dpi: true
 
   # Gap between adjacent windows.
-  inner_gap: '4px'
+  inner_gap: '10px'
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '4px'
-    right: '4px'
-    bottom: '4px'
-    left: '4px'
+    top: '12px'
+    right: '12px'
+    bottom: '12px'
+    left: '12px'
 
 window_effects:
   # Visual effects to apply to the focused window.
@@ -65,7 +65,7 @@ window_effects:
     # Remove the title bar from the window's frame. Note that this can
     # cause rendering issues for some applications.
     hide_title_bar:
-      enabled: false
+      enabled: true
 
     # Change the corner style of the window's frame.
     # ** Exclusive to Windows 11 due to API limitations.
@@ -77,17 +77,15 @@ window_effects:
     # Change the transparency of the window.
     transparency:
       enabled: false
-      # Can be something like '95%' or '0.95' for slightly transparent windows.
-      # '0' or '0%' is fully transparent (and, by consequence, unfocusable).
       opacity: '95%'
 
   # Visual effects to apply to non-focused windows.
   other_windows:
     border:
       enabled: true
-      color: '#a1a1a1'
+      color: '#5a5a5a'
     hide_title_bar:
-      enabled: false
+      enabled: true
     corner_style:
       enabled: true
       style: 'rounded'
@@ -235,7 +233,15 @@ keybindings:
 
   # Close focused window.
   - commands: ['close']
-    bindings: ['alt+shift+q']
+    bindings: ['alt+q', 'alt+shift+q']
+
+  # Focus the workspace that last had focus (via alt+backtick).
+  - commands: ['focus --recent-workspace']
+    bindings: ['alt+oem_tilde']
+
+  # Cycle focus between tiling and floating windows.
+  - commands: ['wm-cycle-focus']
+    bindings: ['alt+e']
 
   # Kill GlazeWM process safely.
   - commands: ['wm-exit']

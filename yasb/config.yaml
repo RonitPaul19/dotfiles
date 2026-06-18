@@ -11,7 +11,7 @@ bars:
     class_name: "yasb-bar"
     alignment:
       position: "top"
-      center: false
+      center: true
     animation:
       enabled: true
       duration: 1000
@@ -21,7 +21,7 @@ bars:
       always_on_top: false
       windows_app_bar: true
     dimensions:
-      width: "100%"
+      width: "58%"
       height: 24
     padding:
       top: 0
@@ -30,14 +30,18 @@ bars:
       right: 0
     widgets:
       left: [
-        "glazewm_workspaces",
+        "volume",
+        "cava"
       ]
       center: [
-        "clock"
+        "clock_hours",
+        "glazewm_workspaces",
+        "clock_minutes"
       ]
       right: [
-        "power_menu"
-        ]
+        "wifi",
+        "battery"
+      ]
 widgets:
   home:
     type: "yasb.home.HomeWidget"
@@ -66,7 +70,12 @@ widgets:
         show_thumbnail: false
         controls_only: false
         controls_left: true
-        hide_empty: true
+      hide_empty: true
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8
         thumbnail_alpha: 250
         thumbnail_padding: 8
         thumbnail_corner_radius: 0
@@ -86,11 +95,19 @@ widgets:
       max_length: 46
       max_length_ellipsis: "..."
       monitor_exclusive: true
-  clock:
+  clock_hours:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "{%I:%M}"
-      label_alt: "{%I:%M}"
+      label: "{%I}"
+      label_alt: "{%I}"
+      timezones: []
+      callbacks:
+        on_left: "toggle_calendar"
+  clock_minutes:
+    type: "yasb.clock.ClockWidget"
+    options:
+      label: "{%M}"
+      label_alt: "{%M}"
       timezones: []
       callbacks:
         on_left: "toggle_calendar"
@@ -121,22 +138,32 @@ widgets:
         on_left: "toggle_mute"
         on_middle: "toggle_label"
         on_right: "exec cmd.exe /c start ms-settings:sound"
-  power_menu:
-    type: "yasb.power_menu.PowerMenuWidget"
+  wifi:
+    type: "yasb.wifi.WifiWidget"
     options:
-      label: "\uf011"
-      uptime: True
-      blur: False
-      blur_background: True
-      animation_duration: 200
-      button_row: 5
-      buttons:
-        shutdown: ["\uf011", "Rage Quit"]
-        restart: ["\uead2", "Oops, Reboot"]
-        signout: ["\udb80\udf43", "Dip Out"]
-        hibernate: ["\uf28e", "Bear Mode"]
-        sleep: ["\u23fe", "Nap Time"]
-        cancel: ["", "Nah, Im Good "]
+      label: "{wifi_icon} {wifi_name}"
+      label_alt: "{wifi_name} {wifi_strength}%"
+      update_interval: 5000
+      callbacks:
+        on_left: "toggle_label"
+        on_middle: "exec cmd.exe /c start ms-settings:network"
+        on_right: "toggle_label"
+  battery:
+    type: "yasb.battery.BatteryWidget"
+    options:
+      label: "{icon} {percent}%"
+      label_alt: "{icon} {percent}% | {time_remaining}"
+      update_interval: 5000
+      hide_unsupported: true
+      callbacks:
+        on_left: "toggle_label"
+      status_icons:
+        icon_charging: ""
+        icon_critical: "\udb80\udc7a"
+        icon_low: "\udb80\udc7c"
+        icon_medium: "\udb80\udc7e"
+        icon_high: "\udb80\udc81"
+        icon_full: "\udb80\udc79"
   apps:
     type: "yasb.applications.ApplicationsWidget"
     options:
@@ -174,12 +201,7 @@ widgets:
       bars_number: 8
       bar_spacing: 2
       bar_width: 4
-      hide_empty: true
-      container_padding:
-        top: 0
-        left: 8
-        bottom: 0
-        right: 8
+      hide_empty: false
   cpu:
     type: "yasb.cpu.CpuWidget"
     options:
@@ -216,10 +238,10 @@ widgets:
       hide_if_offline: true
 
       # Workspace display labels (matching komorebi's label_workspace_btn and label_workspace_active_btn)
-      populated_label: "{name}"
-      empty_label: "{name}"
-      active_populated_label: "{name}"
-      active_empty_label: "{name}"
+      populated_label: " "
+      empty_label: " "
+      active_populated_label: " "
+      active_empty_label: " "
 
       # Workspace management (matching komorebi's hide_empty_workspaces)
       hide_empty_workspaces: false

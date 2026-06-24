@@ -44,14 +44,14 @@ gaps:
   scale_with_dpi: true
 
   # Gap between adjacent windows.
-  inner_gap: '10px'
+  inner_gap: '12px'
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '12px'
-    right: '12px'
-    bottom: '12px'
-    left: '12px'
+    top: '14px'
+    right: '14px'
+    bottom: '14px'
+    left: '14px'
 
 window_effects:
   # Visual effects to apply to the focused window.
@@ -59,13 +59,13 @@ window_effects:
     # Highlight the window with a colored border.
     # ** Exclusive to Windows 11 due to API limitations.
     border:
-      enabled: true
-      color: '#8dbcff'
+      enabled: false
+      color: '#5a5a5a'
 
     # Remove the title bar from the window's frame. Note that this can
     # cause rendering issues for some applications.
     hide_title_bar:
-      enabled: true
+      enabled: false
 
     # Change the corner style of the window's frame.
     # ** Exclusive to Windows 11 due to API limitations.
@@ -82,10 +82,10 @@ window_effects:
   # Visual effects to apply to non-focused windows.
   other_windows:
     border:
-      enabled: true
+      enabled: false
       color: '#5a5a5a'
     hide_title_bar:
-      enabled: true
+      enabled: false
     corner_style:
       enabled: true
       style: 'rounded'
@@ -233,7 +233,7 @@ keybindings:
 
   # Close focused window.
   - commands: ['close']
-    bindings: ['alt+q', 'alt+shift+q']
+    bindings: ['alt+shift+q']
 
   # Focus the workspace that last had focus (via alt+backtick).
   - commands: ['focus --recent-workspace']

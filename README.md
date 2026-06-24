@@ -23,6 +23,10 @@
 
 ## 3. Command Line Productivity
 
+- psmux (The best tool ever)
+  - terminal multiplexer
+  - no more switching between windows :)
+
 - fzf
   - Fuzzy search
   - History search

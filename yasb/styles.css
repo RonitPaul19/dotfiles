@@ -1,6 +1,62 @@
+:root {
+    --accent: #c4a7e7;
+    --alert-bg: rgba(246, 193, 119, 0.05);
+    --alert-border: rgba(246, 193, 119, 0.1);
+    --alert-text: rgba(144, 140, 170, 0.85);
+    --base: #191724;
+    --black: #000000;
+    --blue: #9ccfd8;
+    --border-dark: #21202e;
+    --btn-hover-bg: rgba(224, 222, 244, 0.1);
+    --button-bg: #26233a;
+    --button-hover: rgba(224, 222, 244, 0.158);
+    --button-pressed: #403d52;
+    --calendar-bg: rgba(31, 29, 46, 0.4);
+    --calendar-text: rgba(144, 140, 170, 0.85);
+    --cancel-icon: rgba(235, 111, 146, 0.55);
+    --cancel-label: rgba(235, 111, 146, 0.95);
+    --card-bg: rgba(31, 29, 46, 0.2);
+    --chart: #f6c177;
+    --day-active-bg: rgba(33, 32, 46, 0.6);
+    --day-active-border: rgba(64, 61, 82, 1);
+    --disabled: #524f67;
+    --edge: #9ccfd8;
+    --firefox: #eb6f92;
+    --gray: #6e6a86;
+    --green: #31748f;
+    --groove-hover: rgba(224, 222, 244, 0.2);
+    --hourly-bg: #31748f;
+    --icon-dim: rgba(224, 222, 244, 0.25);
+    --lavender: #c4a7e7;
+    --maroon: #eb6f92;
+    --mauve: #c4a7e7;
+    --media-bg: rgba(31, 29, 46, 0.5);
+    --muted: #6e6a86;
+    --muted-alt: #908caa;
+    --paused: #6e6a86;
+    --popup-bg: rgba(31, 29, 46, 0.75);
+    --popup-hover: rgb(38, 35, 58);
+    --spotify: #31748f;
+    --subtext0: #e0def4;
+    --subtext1: #e0def4;
+    --surface0: #1f1d2e;
+    --surface1: #26233a;
+    --surface2: #403d52;
+    --teal: #ebbcba;
+    --text: #e0def4;
+    --text-dim: rgba(224, 222, 244, 0.6);
+    --text-muted: rgba(144, 140, 170, 0.726);
+    --transparent: rgba(255, 255, 255, 0);
+    --transparent-base: rgba(25, 23, 36, 0);
+    --transparent-dark: rgba(0, 0, 0, 0);
+    --weather-bg: rgba(25, 23, 36, 0.5);
+    --white: #ffffff;
+    --yellow: #f6c177;
+}
+
 * {
-    font-size: 12px;
-    color: #cdd6f4;
+    font-size: 11px;
+    color: var(--text);
     font-weight: 500;
     font-family: "JetBrainsMono NFP";
     margin: 0;
@@ -10,7 +66,7 @@
 .yasb-bar {
     padding: 0;
     margin: 0;
-    background-color: #1e1e2e;
+    background-color: var(--base);
     border-radius: 6px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -23,7 +79,6 @@
 
 .widget .label {
     padding: 2px 2px 1px 2px;
-
 }
 
 .widget .label.alt {
@@ -42,7 +97,7 @@
     font-size: 0;
     width: 12px;
     height: 6px;
-    background-color: #585b70;
+    background-color: var(--surface2);
     border: none;
     border-radius: 3px;
     padding: 0;
@@ -50,27 +105,27 @@
 }
 
 .glazewm-workspaces .ws-btn.active_populated {
-    background-color: #89dceb;
+    background-color: var(--teal);
     width: 32px;
 }
 
 .glazewm-workspaces .ws-btn.active_empty {
-    background-color: #89dceb;
+    background-color: var(--teal);
     width: 32px;
 }
 
 .glazewm-workspaces .ws-btn.populated {
-    background-color: #585b70;
+    background-color: var(--surface2);
 }
 
 .glazewm-workspaces .ws-btn.empty {
-    background-color: #313244;
+    background-color: var(--surface0);
 }
 
 .glazewm-workspaces .ws-btn:hover,
 .glazewm-workspaces .ws-btn.populated:hover,
 .glazewm-workspaces .ws-btn.empty:hover {
-    background-color: #89b4fa;
+    background-color: var(--blue);
 }
 
 .glazewm-tiling-direction {
@@ -83,26 +138,24 @@
     font-size: 18px;
     width: 14px;
     padding: 0 4px 0 4px;
-    color: #CDD6F4;
+    color: var(--text);
     border: none;
 }
 
 .glazewm-tiling-direction .btn:hover {
-    background-color: #727272;
+    background-color: var(--gray);
 }
 
-/*POWER MENU WIDGET*/
-/* Uptime text */
 .uptime {
     font-size: 14px;
     margin-bottom: 10px;
-    color: rgba(191, 202, 219, 0.726);
+    color: var(--text-muted);
     font-weight: 600;
     font-family: "JetBrainsMono NFP";
 }
 
 .power-menu-widget .label {
-    color: #eba0ac;
+    color: var(--maroon);
     font-size: 16px;
 }
 
@@ -111,118 +164,108 @@
     width: 160px;
     height: 240px;
     border-radius: 4px;
-    background-color: rgba(41, 42, 58, 0.75);
+    background-color: var(--popup-bg);
     font-family: "JetBrainsMono NFP";
-    color: white;
-    border: 4px solid rgba(255, 255, 255, 0);
-
+    color: var(--white);
+    border: 4px solid var(--transparent);
 }
 
 .power-menu-popup .button.hover {
-    background-color: rgb(55, 56, 75);
-    border: 4px solid rgb(55, 56, 75);
+    background-color: var(--popup-hover);
+    border: 4px solid var(--popup-hover);
 }
 
 .power-menu-popup .button .label {
     margin-bottom: 8px;
     font-size: 16px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text-dim);
     font-family: "JetBrainsMono NFP";
 }
 
 .power-menu-popup .button .icon {
     font-size: 64px;
     padding-top: 54px;
-    color: rgba(255, 255, 255, 0.25);
+    color: var(--icon-dim);
 }
 
 .power-menu-popup .button.cancel {
     height: 20px !important;
-    /* Much thinner than the 240px of other buttons */
     width: 100%;
-    /* Full width to span across */
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .power-menu-popup .button.cancel .icon {
     font-size: 24px !important;
-    /* Smaller icon for the thinner button */
     padding-top: 0px !important;
-    /* Remove the large top padding */
-    color: rgba(243, 139, 168, 0.55);
+    color: var(--cancel-icon);
 }
 
 .power-menu-popup .button.cancel .label {
     margin-bottom: 0px !important;
-    /* Remove bottom margin */
-    color: rgba(243, 139, 168, 0.95);
+    color: var(--cancel-label);
 }
 
-/* ICONS */
 .icon {
     font-size: 16px;
 }
 
 .volume-widget {
-    color: #f9e2af;
+    color: var(--yellow);
 }
 
 .volume-widget .label {
-    color: #f9e2af;
+    color: var(--yellow);
 }
 
 .volume-widget .icon {
-    color: #f9e2af;
+    color: var(--yellow);
     margin: 1px 2px 0 0;
 }
 
 .start-menu .icon {
     font-size: 18px;
-    color: #89b4fa
+    color: var(--blue)
 }
 
 .clock-widget .icon {
-    color: #cba6f7;
+    color: var(--mauve);
     font-size: 14px;
 }
 
-/* WIFI WIDGET */
 .wifi-widget {
-    color: #a6e3a1;
+    color: var(--green);
 }
 
 .wifi-widget .label {
-    color: #a6e3a1;
+    color: var(--green);
 }
 
 .wifi-widget .icon {
-    color: #a6e3a1;
+    color: var(--green);
 }
 
-/* BATTERY WIDGET */
 .battery-widget {
-    color: #89dceb;
+    color: var(--teal);
 }
 
 .battery-widget .label {
-    color: #89dceb;
+    color: var(--teal);
 }
 
 .battery-widget .icon {
-    color: #89dceb;
+    color: var(--teal);
 }
 
-/* WEATHER WIDGET */
 .weather-card {
-    background-color: rgba(17, 17, 27, 0.5);
+    background-color: var(--weather-bg);
 }
 
 .weather-card-today {
-    border: 1px solid #282936;
+    border: 1px solid var(--border-dark);
     border-radius: 8px;
-    background-color: rgba(17, 17, 27, 0.2);
+    background-color: var(--card-bg);
 }
 
 .weather-card-today .label {
@@ -237,26 +280,26 @@
 .weather-card-today .label.alert {
     font-size: 12px;
     font-weight: 700;
-    background-color: rgba(247, 199, 42, 0.05);
-    border: 1px solid rgba(247, 209, 42, 0.1);
-    color: rgba(196, 181, 162, 0.85);
+    background-color: var(--alert-bg);
+    border: 1px solid var(--alert-border);
+    color: var(--alert-text);
     border-radius: 6px;
     padding: 5px 0;
 }
 
 .weather-card-day {
-    border: 1px solid #45475a;
+    border: 1px solid var(--surface1);
     border-radius: 8px;
-    background-color: rgba(17, 17, 27, 0.2);
+    background-color: var(--card-bg);
 }
 
 .weather-card-day.active {
-    background-color: rgba(40, 40, 60, 0.6);
-    border: 1px solid rgba(50, 50, 75, 1);
+    background-color: var(--day-active-bg);
+    border: 1px solid var(--day-active-border);
 }
 
 .weather-card-day:hover {
-    background-color: rgba(40, 40, 60, 0.6);
+    background-color: var(--day-active-bg);
 }
 
 .weather-card-day .label {
@@ -264,18 +307,14 @@
 }
 
 .weather-card .hourly-container {
-    border: 1px solid #282936;
-    background-color: #3c5fa0;
+    border: 1px solid var(--border-dark);
+    background-color: var(--hourly-bg);
     border-radius: 8px;
     min-height: 150px;
 }
 
 .weather-card .hourly-data {
-    /* font-family: 'Segoe UI';*/
-    /* color: cyan;*/
-    /* <- Font color */
-    background-color: #FAE93F;
-    /* <- Curve color */
+    background-color: var(--chart);
     font-size: 12px;
     font-weight: bold;
 }
@@ -286,7 +325,7 @@
 }
 
 .media-widget .label {
-    color: #b4befe;
+    color: var(--lavender);
     padding: 0px;
     padding-right: 4px;
 }
@@ -294,7 +333,7 @@
 .media-menu {
     min-width: 420px;
     max-width: 420px;
-    background-color: rgba(31, 39, 49, 0.5);
+    background-color: var(--media-bg);
 }
 
 .media-menu .title,
@@ -308,41 +347,38 @@
 
 .media-menu .artist {
     font-size: 13px;
-    color: #6c7086;
+    color: var(--muted);
     margin-top: 0px;
     margin-bottom: 8px;
 }
 
 .media-menu .source {
     font-size: 11px;
-    color: #000;
+    color: var(--black);
     font-weight: normal;
     border-radius: 3px;
-    background-color: #bac2de;
+    background-color: var(--subtext1);
     padding: 2px 4px;
-
 }
 
-/* The source class name is the same as what you see in the media widget; just replace spaces with dashes and convert it to lowercase.
-Example: "Windows Media" becomes "windows-media" */
 .media-menu .source.firefox {
-    background-color: #ff583b;
-    color: #ffffff;
+    background-color: var(--firefox);
+    color: var(--white);
 }
 
 .media-menu .source.spotify {
-    background-color: #199143;
-    color: #ffffff;
+    background-color: var(--spotify);
+    color: var(--white);
 }
 
 .media-menu .source.edge {
-    background-color: #0078d4;
-    color: #ffffff;
+    background-color: var(--edge);
+    color: var(--white);
 }
 
 .media-menu .source.windows-media {
-    background-color: #0078d4;
-    color: #ffffff;
+    background-color: var(--edge);
+    color: var(--white);
 }
 
 .media-menu .btn {
@@ -362,25 +398,25 @@ Example: "Windows Media" becomes "windows-media" */
 }
 
 .media-menu .btn:hover {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    background-color: var(--btn-hover-bg);
 }
 
 .media-menu .btn.play {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--btn-hover-bg);
     font-size: 20px
 }
 
 .media-menu .btn.disabled:hover,
 .media-menu .btn.disabled {
-    color: #4e525c;
-    background-color: rgba(0, 0, 0, 0);
+    color: var(--disabled);
+    background-color: var(--transparent-dark);
 }
 
 .media-menu .playback-time {
     font-size: 13px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #7f849c;
+    color: var(--muted-alt);
     margin-top: 20px;
     min-width: 100px;
 }
@@ -395,24 +431,22 @@ Example: "Windows Media" becomes "windows-media" */
     background: transparent;
     height: 2px;
     border-radius: 3px;
-    background: rgba(255, 255, 255, 0.1);
-
+    background: var(--btn-hover-bg);
 }
 
 .media-menu .progress-slider::groove:hover {
     background: transparent;
     height: 6px;
     border-radius: 3px;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--groove-hover);
 }
 
 .media-menu .progress-slider::sub-page {
-    background: white;
+    background: var(--white);
     border-radius: 3px;
     height: 4px;
 }
 
-/* Hide media widget buttons */
 .media-widget .btn {
     padding: 0;
     margin: 0 -6px;
@@ -430,22 +464,21 @@ Example: "Windows Media" becomes "windows-media" */
 
 .pomodoro-widget .label.paused,
 .pomodoro-widget .icon.paused {
-    color: #7d7e8b;
+    color: var(--paused);
 }
 
 .pomodoro-widget .label.work,
 .pomodoro-widget .icon.work {
-    color: #a6e3a1;
+    color: var(--green);
 }
 
 .pomodoro-widget .label.break,
 .pomodoro-widget .icon.break {
-    color: #89b4fa;
+    color: var(--blue);
 }
 
-/* Pomodoro menu styling */
 .pomodoro-menu {
-    background-color: rgba(17, 17, 27, 0.2);
+    background-color: var(--card-bg);
     border-radius: 8px;
 }
 
@@ -453,57 +486,57 @@ Example: "Windows Media" becomes "windows-media" */
     font-size: 16px;
     font-weight: 600;
     max-height: 0px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .pomodoro-menu .status {
     font-size: 18px;
     font-weight: 600;
-    color: #cdd6f4;
+    color: var(--text);
 }
 
 .pomodoro-menu .session {
     font-size: 12px;
-    color: #a6adc8;
+    color: var(--subtext0);
 }
 
 .pomodoro-menu .button {
-    background-color: #3f4053;
-    color: #cdd6f4;
+    background-color: var(--button-bg);
+    color: var(--text);
     border: none;
     border-radius: 4px;
     padding: 6px 12px;
 }
 
 .pomodoro-menu .button.start {
-    background-color: #3f4053;
+    background-color: var(--button-bg);
 }
 
 .pomodoro-menu .button.reset {
-    background-color: #3f4053;
+    background-color: var(--button-bg);
 }
 
 .pomodoro-menu .button:hover {
-    background-color: rgba(255, 255, 255, 0.158);
+    background-color: var(--button-hover);
 }
 
 .pomodoro-menu .button.pause {
-    background-color: #a6e3a1;
-    color: #1e1e2e;
+    background-color: var(--green);
+    color: var(--base);
 }
 
 .pomodoro-menu .button:pressed {
-    background-color: #5a5b6e;
+    background-color: var(--button-pressed);
 }
 
 .calendar {
-    background-color: rgba(17, 17, 27, 0.4);
+    background-color: var(--calendar-bg);
 }
 
 .calendar .calendar-table,
 .calendar .calendar-table::item {
-    background-color: rgba(17, 17, 27, 0);
-    color: rgba(162, 177, 196, 0.85);
+    background-color: var(--transparent-base);
+    color: var(--calendar-text);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -512,8 +545,8 @@ Example: "Windows Media" becomes "windows-media" */
 }
 
 .calendar .calendar-table::item:selected {
-    color: rgb(255, 255, 255);
-    background-color: #007acc;
+    color: var(--white);
+    background-color: var(--accent);
     border-radius: 10px;
 }
 
@@ -528,7 +561,7 @@ Example: "Windows Media" becomes "windows-media" */
 .calendar .holiday-label {
     font-family: 'Segoe UI';
     font-size: 16px;
-    color: #fff;
+    color: var(--white);
     font-weight: 700;
     min-width: 180px;
     max-width: 180px;
@@ -538,11 +571,11 @@ Example: "Windows Media" becomes "windows-media" */
 .calendar .holiday-label {
     font-size: 12px;
     font-weight: 600;
-    color: rgba(162, 177, 196, 0.85);
+    color: var(--calendar-text);
 }
 
 .calendar .holiday-label {
-    color: rgba(162, 177, 196, 0.85);
+    color: var(--calendar-text);
     font-weight: 700;
 }
 
@@ -553,6 +586,6 @@ Example: "Windows Media" becomes "windows-media" */
 .calendar .date-label {
     font-size: 88px;
     font-weight: 900;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     margin-top: -20px;
 }

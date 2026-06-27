@@ -15,6 +15,7 @@
         fd (fast file finder)
         zoxide (better cd command)
         eza (better ls command)
+        yazi (cli basid file explorer)
 
 4. Git Tools
    ---------

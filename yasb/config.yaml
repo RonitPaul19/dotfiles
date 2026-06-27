@@ -107,10 +107,10 @@ widgets:
       min_bar_height: 0
       gradient: 1
       reverse: 0
-      foreground: "#89b4fa"
-      gradient_color_1: '#74c7ec'
-      gradient_color_2: '#89b4fa'
-      gradient_color_3: '#cba6f7'
+      foreground: "#9ccfd8"
+      gradient_color_1: '#ebbcba'
+      gradient_color_2: '#9ccfd8'
+      gradient_color_3: '#c4a7e7'
       bars_number: 8
       bar_spacing: 2
       bar_width: 4

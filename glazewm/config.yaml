@@ -12,7 +12,7 @@ general:
   config_reload_commands: []
 
   # Whether to automatically focus windows underneath the cursor.
-  focus_follows_cursor: false
+  focus_follows_cursor: true
 
   # Whether to switch back and forth between the previously focused
   # workspace when focusing the current workspace.
@@ -44,14 +44,14 @@ gaps:
   scale_with_dpi: true
 
   # Gap between adjacent windows.
-  inner_gap: '12px'
+  inner_gap: '9px'
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '14px'
-    right: '14px'
-    bottom: '14px'
-    left: '14px'
+    top: '13px'
+    right: '13px'
+    bottom: '13px'
+    left: '13px'
 
 window_effects:
   # Visual effects to apply to the focused window.
@@ -65,13 +65,13 @@ window_effects:
     # Remove the title bar from the window's frame. Note that this can
     # cause rendering issues for some applications.
     hide_title_bar:
-      enabled: false
+      enabled: true
 
     # Change the corner style of the window's frame.
     # ** Exclusive to Windows 11 due to API limitations.
     corner_style:
       enabled: true
-      # Allowed values: 'rounded', 'rounded', 'small_rounded'.
+      # Allowed values: 'square', 'rounded', 'small_rounded'.
       style: 'rounded'
 
     # Change the transparency of the window.
@@ -85,7 +85,7 @@ window_effects:
       enabled: false
       color: '#5a5a5a'
     hide_title_bar:
-      enabled: false
+      enabled: true
     corner_style:
       enabled: true
       style: 'rounded'

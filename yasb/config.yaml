@@ -21,17 +21,15 @@ bars:
       always_on_top: false
       windows_app_bar: true
     dimensions:
-      width: "58%"
-      height: 24
+      width: "15%"
+      height: 27
     padding:
-      top: 0
+      top: 6
       left: 0
       bottom: 0
       right: 0
     widgets:
       left: [
-        "volume",
-        "cava"
       ]
       center: [
         "clock_hours",
@@ -39,8 +37,6 @@ bars:
         "clock_minutes"
       ]
       right: [
-        "wifi",
-        "battery"
       ]
 widgets:
   clock_hours:
@@ -105,7 +101,7 @@ widgets:
     options:
       bar_height: 12
       min_bar_height: 0
-      gradient: 1
+      gradient: 0
       reverse: 0
       foreground: "#9ccfd8"
       gradient_color_1: '#ebbcba'

@@ -1,40 +1,40 @@
 :root {
     --accent: #c4a7e7;
-    --alert-bg: rgba(246, 193, 119, 0.05);
-    --alert-border: rgba(246, 193, 119, 0.1);
-    --alert-text: rgba(144, 140, 170, 0.85);
+    --alert-bg: rgb(246, 193, 119);
+    --alert-border: rgb(246, 193, 119);
+    --alert-text: rgb(144, 140, 170);
     --base: #191724;
     --black: #000000;
     --blue: #9ccfd8;
     --border-dark: #21202e;
-    --btn-hover-bg: rgba(224, 222, 244, 0.1);
+    --btn-hover-bg: rgb(224, 222, 244);
     --button-bg: #26233a;
-    --button-hover: rgba(224, 222, 244, 0.158);
+    --button-hover: rgb(224, 222, 244);
     --button-pressed: #403d52;
-    --calendar-bg: rgba(31, 29, 46, 0.4);
-    --calendar-text: rgba(144, 140, 170, 0.85);
-    --cancel-icon: rgba(235, 111, 146, 0.55);
-    --cancel-label: rgba(235, 111, 146, 0.95);
-    --card-bg: rgba(31, 29, 46, 0.2);
+    --calendar-bg: rgb(31, 29, 46);
+    --calendar-text: rgb(144, 140, 170);
+    --cancel-icon: rgb(235, 111, 146);
+    --cancel-label: rgb(235, 111, 146);
+    --card-bg: rgb(31, 29, 46);
     --chart: #f6c177;
-    --day-active-bg: rgba(33, 32, 46, 0.6);
-    --day-active-border: rgba(64, 61, 82, 1);
+    --day-active-bg: rgb(33, 32, 46);
+    --day-active-border: rgb(64, 61, 82);
     --disabled: #524f67;
     --edge: #9ccfd8;
     --firefox: #eb6f92;
     --gray: #6e6a86;
     --green: #31748f;
-    --groove-hover: rgba(224, 222, 244, 0.2);
+    --groove-hover: rgb(224, 222, 244);
     --hourly-bg: #31748f;
-    --icon-dim: rgba(224, 222, 244, 0.25);
+    --icon-dim: rgb(224, 222, 244);
     --lavender: #c4a7e7;
     --maroon: #eb6f92;
     --mauve: #c4a7e7;
-    --media-bg: rgba(31, 29, 46, 0.5);
+    --media-bg: rgb(31, 29, 46);
     --muted: #6e6a86;
     --muted-alt: #908caa;
     --paused: #6e6a86;
-    --popup-bg: rgba(31, 29, 46, 0.75);
+    --popup-bg: rgb(31, 29, 46);
     --popup-hover: rgb(38, 35, 58);
     --spotify: #31748f;
     --subtext0: #e0def4;
@@ -44,12 +44,12 @@
     --surface2: #403d52;
     --teal: #ebbcba;
     --text: #e0def4;
-    --text-dim: rgba(224, 222, 244, 0.6);
-    --text-muted: rgba(144, 140, 170, 0.726);
-    --transparent: rgba(255, 255, 255, 0);
-    --transparent-base: rgba(25, 23, 36, 0);
-    --transparent-dark: rgba(0, 0, 0, 0);
-    --weather-bg: rgba(25, 23, 36, 0.5);
+    --text-dim: rgb(224, 222, 244);
+    --text-muted: rgb(144, 140, 170);
+    --transparent: #191724;
+    --transparent-base: #191724;
+    --transparent-dark: #191724;
+    --weather-bg: rgb(25, 23, 36);
     --white: #ffffff;
     --yellow: #f6c177;
 }
@@ -67,9 +67,7 @@
     padding: 0;
     margin: 0;
     background-color: var(--base);
-    border-radius: 6px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-radius: 999px;
 }
 
 .widget {

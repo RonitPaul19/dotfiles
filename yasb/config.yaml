@@ -21,10 +21,10 @@ bars:
       always_on_top: false
       windows_app_bar: true
     dimensions:
-      width: "15%"
-      height: 27
+      width: "15%" # rice = 15%
+      height: 28 # rice = 28
     padding:
-      top: 6
+      top: 7 #10
       left: 0
       bottom: 0
       right: 0

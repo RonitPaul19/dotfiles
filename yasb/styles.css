@@ -57,36 +57,12 @@
 * {
     font-size: 11px;
     color: var(--text);
-    font-weight: 500;
+    font-weight: 600;
     font-family: "JetBrainsMono NFP";
     margin: 0;
     padding: 0;
 }
 
-.yasb-bar {
-    padding: 0;
-    margin: 0;
-    background-color: var(--base);
-    border-radius: 1000px;
-    /*rice = 1000px*/
-}
-
-.widget {
-    padding: 0 10px;
-    margin: 0;
-}
-
-.widget .label {
-    padding: 2px 2px 1px 2px;
-}
-
-.widget .label.alt {
-    padding: 1px 8px 1px 8px;
-}
-
-.clock-widget .label {
-    padding-left: 8px;
-}
 
 .glazewm-workspaces {
     margin: 0;
@@ -153,10 +129,6 @@
     font-family: "JetBrainsMono NFP";
 }
 
-.power-menu-widget .label {
-    color: var(--maroon);
-    font-size: 16px;
-}
 
 .power-menu-popup .button {
     padding: 0;
@@ -210,19 +182,6 @@
     font-size: 16px;
 }
 
-.volume-widget {
-    color: var(--yellow);
-}
-
-.volume-widget .label {
-    color: var(--yellow);
-}
-
-.volume-widget .icon {
-    color: var(--yellow);
-    margin: 1px 2px 0 0;
-}
-
 .start-menu .icon {
     font-size: 18px;
     color: var(--blue)
@@ -231,30 +190,6 @@
 .clock-widget .icon {
     color: var(--mauve);
     font-size: 14px;
-}
-
-.wifi-widget {
-    color: var(--green);
-}
-
-.wifi-widget .label {
-    color: var(--green);
-}
-
-.wifi-widget .icon {
-    color: var(--green);
-}
-
-.battery-widget {
-    color: var(--teal);
-}
-
-.battery-widget .label {
-    color: var(--teal);
-}
-
-.battery-widget .icon {
-    color: var(--teal);
 }
 
 .weather-card {
@@ -318,16 +253,6 @@
     font-weight: bold;
 }
 
-.media-widget {
-    padding: 0;
-    margin: 0;
-}
-
-.media-widget .label {
-    color: var(--lavender);
-    padding: 0px;
-    padding-right: 4px;
-}
 
 .media-menu {
     min-width: 420px;
@@ -587,4 +512,115 @@
     font-weight: 900;
     color: var(--white);
     margin-top: -20px;
+}
+
+/* ─── Bar (floating pill) ─── */
+.yasb-bar {
+    padding: 0;
+    margin: 0;
+    background-color: var(--base);
+    border: 1px solid var(--surface1);
+    border-radius: 1000px;
+}
+
+/* ─── Power Menu (hidden, keyboard-only access) ─── */
+.power-menu-widget {
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    max-width: 0;
+}
+
+.power-menu-widget .label {
+    font-size: 0;
+    color: transparent;
+}
+
+/* ─── Clock ─── */
+.clock-widget .label {
+    font-size: 12px;
+    padding: 0 8px;
+    color: var(--text);
+}
+
+/* ─── Power Menu (compact popup) ─── */
+.power-menu-widget .label {
+    color: var(--maroon);
+    font-size: 13px;
+}
+
+.power-menu-compact {
+    min-width: 300px;
+    max-width: 300px;
+    background-color: var(--transparent);
+    border: 1px solid var(--surface1);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.power-menu-compact .profile-info {
+    padding: 12px 0 20px 0;
+}
+
+.power-menu-compact .profile-info .profile-username {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    font-family: "JetBrainsMono NFP";
+    margin-top: 4px;
+}
+
+.power-menu-compact .profile-info .profile-account-type {
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 600;
+    margin-top: 6px;
+    font-family: "JetBrainsMono NFP";
+}
+
+.power-menu-compact .buttons {
+    background-color: var(--surface0);
+    margin: 0 8px 8px 8px;
+    border-radius: 8px;
+}
+
+.power-menu-compact .button {
+    padding: 8px 14px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.power-menu-compact .button.hover {
+    background-color: var(--surface1);
+}
+
+.power-menu-compact .button.lock.hover {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.power-menu-compact .button.shutdown.hover {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.power-menu-compact .button .icon {
+    font-size: 13px;
+    color: var(--text-dim);
+    padding-right: 10px;
+    min-width: 18px;
+}
+
+.power-menu-compact .button .label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.power-menu-compact .icon.hover,
+.power-menu-compact .label.hover {
+    color: var(--white);
 }

@@ -1,9 +1,8 @@
-# This is default and very simple configuration file for Yasb.
-# For more information about configuration options, please visit the Wiki https://github.com/amnweb/yasb/wiki
 watch_stylesheet: true
 watch_config: true
 debug: false
-update_check: true # Enable automatic update check.
+update_check: true
+
 bars:
   primary-bar:
     enabled: true
@@ -11,130 +10,67 @@ bars:
     class_name: "yasb-bar"
     alignment:
       position: "top"
-      center: true
+      align: "center"
     animation:
       enabled: true
-      duration: 1000
+      duration: 500
     blur_effect:
-      enabled: false
+      enabled: true
+      dark_mode: true
+      round_corners: true
+      round_corners_type: "normal"
+      border_color: "None"
     window_flags:
       always_on_top: false
       windows_app_bar: true
     dimensions:
-      width: "15%" # rice = 15%
-      height: 28 # rice = 28
+      width: 150
+      height: 30
     padding:
-      top: 7 #10
+      top: 6
       left: 0
       bottom: 0
       right: 0
     widgets:
-      left: [
-      ]
-      center: [
-        "clock_hours",
-        "glazewm_workspaces",
-        "clock_minutes"
-      ]
-      right: [
-      ]
+      left: []
+      center: ["clock"]
+      right: ["power_menu"]
+
 widgets:
-  clock_hours:
+  clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "{%I}"
-      label_alt: "{%I}"
+      label: "{%H:%M}"
+      label_alt: "{%A, %B %d, %Y}"
       timezones: []
       callbacks:
         on_left: "toggle_calendar"
-  clock_minutes:
-    type: "yasb.clock.ClockWidget"
+  power_menu:
+    type: "yasb.power_menu.PowerMenuWidget"
     options:
-      label: "{%M}"
-      label_alt: "{%M}"
-      timezones: []
+      label: "\uf011"
+      keybindings:
+        - keys: "ctrl+alt+p"
+          action: "toggle_power_menu"
+      uptime: true
+      show_user: true
+      blur: false
+      menu_style: "popup"
+      popup:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "center"
+        direction: "down"
+        offset_top: -30
+        offset_left: -75
+      profile_image_size: 64
+      buttons:
+        lock: ["\uf023", "Lock"]
+        sleep: ["\uf186", "Sleep"]
+        restart: ["\uf021", "Restart"]
+        shutdown: ["\uf011", "Shut Down"]
+        cancel: ["", "Cancel"]
       callbacks:
-        on_left: "toggle_calendar"
-  volume:
-    type: "yasb.volume.VolumeWidget"
-    options:
-      label: "<span>{icon}</span> {level}"
-      label_alt: "{volume}"
-      tooltip: false
-      volume_icons:
-        - "\ueee8"
-        - "\uf026"
-        - "\uf027"
-        - "\uf027"
-        - "\uf028"
-      callbacks:
-        on_left: "toggle_mute"
-        on_right: "exec cmd.exe /c start ms-settings:sound"
-  wifi:
-    type: "yasb.wifi.WifiWidget"
-    options:
-      label: "{wifi_icon} {wifi_name}"
-      label_alt: "{wifi_name} {wifi_strength}%"
-      update_interval: 5000
-      callbacks:
-        on_left: "toggle_label"
-        on_middle: "exec cmd.exe /c start ms-settings:network"
-        on_right: "toggle_label"
-  battery:
-    type: "yasb.battery.BatteryWidget"
-    options:
-      label: "{icon} {percent}%"
-      label_alt: "{icon} {percent}% | {time_remaining}"
-      update_interval: 5000
-      hide_unsupported: true
-      callbacks:
-        on_left: "toggle_label"
-      status_icons:
-        icon_charging: ""
-        icon_critical: "\udb80\udc7a"
-        icon_low: "\udb80\udc7c"
-        icon_medium: "\udb80\udc7e"
-        icon_high: "\udb80\udc81"
-        icon_full: "\udb80\udc79"
-  cava:
-    type: "yasb.cava.CavaWidget"
-    options:
-      bar_height: 12
-      min_bar_height: 0
-      gradient: 0
-      reverse: 0
-      foreground: "#9ccfd8"
-      gradient_color_1: '#ebbcba'
-      gradient_color_2: '#9ccfd8'
-      gradient_color_3: '#c4a7e7'
-      bars_number: 8
-      bar_spacing: 2
-      bar_width: 4
-      hide_empty: false
-  glazewm_workspaces:
-    type: "glazewm.workspaces.GlazewmWorkspacesWidget"
-    options:
-      # Offline behavior (matching komorebi's label_offline and hide_if_offline)
-      offline_label: "GlazeWM Offline"
-      hide_if_offline: true
-
-      # Workspace display labels (matching komorebi's label_workspace_btn and label_workspace_active_btn)
-      populated_label: " "
-      empty_label: " "
-      active_populated_label: " "
-      active_empty_label: " "
-
-      # Workspace management (matching komorebi's hide_empty_workspaces)
-      hide_empty_workspaces: false
-
-      # Server connection
-      glazewm_server_uri: "ws://localhost:6123"
-
-      # Additional GlazeWM-specific options (keeping defaults)
-      enable_scroll_switching: true
-      reverse_scroll_direction: true
-      container_padding:
-        top: 0
-        left: 0
-        bottom: 0
-        right: 0
+        on_left: "toggle_power_menu"

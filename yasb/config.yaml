@@ -14,12 +14,6 @@ bars:
     animation:
       enabled: true
       duration: 500
-    blur_effect:
-      enabled: true
-      dark_mode: true
-      round_corners: true
-      round_corners_type: "normal"
-      border_color: "None"
     window_flags:
       always_on_top: false
       windows_app_bar: true
@@ -74,3 +68,4 @@ widgets:
         cancel: ["", "Cancel"]
       callbacks:
         on_left: "toggle_power_menu"
+

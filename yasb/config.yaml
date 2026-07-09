@@ -18,7 +18,7 @@ bars:
       always_on_top: false
       windows_app_bar: true
     dimensions:
-      width: 150
+      width: 110
       height: 30
     padding:
       top: 6
@@ -27,16 +27,43 @@ bars:
       right: 0
     widgets:
       left: []
-      center: ["clock"]
+      center: ["cava", "clock"]
       right: ["power_menu"]
 
 widgets:
+  cava:
+    type: "yasb.cava.CavaWidget"
+    options:
+      bar_height: 12
+      bars_number: 4
+      bar_spacing: 2
+      bar_width: 2
+      sensitivity: 75
+      gradient: 1
+      gradient_color_1: '#bb9af7'
+      gradient_color_2: '#7aa2f7'
+      gradient_color_3: '#9ece6a'
+      framerate: 60
+      sleep_timer: 2
+      hide_empty: true
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 0
   clock:
     type: "yasb.clock.ClockWidget"
     options:
       label: "{%H:%M}"
       label_alt: "{%A, %B %d, %Y}"
       timezones: []
+      keybindings:
+        - keys: "ctrl+alt+d"
+          action: "toggle_calendar"
+      calendar:
+        alignment: "center"
+        offset_left: 0
+        offset_top: -30
       callbacks:
         on_left: "toggle_calendar"
   power_menu:
@@ -58,14 +85,13 @@ widgets:
         alignment: "center"
         direction: "down"
         offset_top: -30
-        offset_left: -75
+        offset_left: -55
       profile_image_size: 64
       buttons:
-        lock: ["\uf023", "Lock"]
-        sleep: ["\uf186", "Sleep"]
-        restart: ["\uf021", "Restart"]
-        shutdown: ["\uf011", "Shut Down"]
-        cancel: ["", "Cancel"]
+        lock: ["", "Lock"]
+        sleep: ["", "Sleep"]
+        restart: ["", "Restart"]
+        shutdown: ["⏻", "Shut Down"]
+        cancel: ["󰜺", "Cancel"]
       callbacks:
         on_left: "toggle_power_menu"
-

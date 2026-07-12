@@ -65,28 +65,44 @@
 
 
 .glazewm-workspaces {
-    margin: 0;
+    margin: 0 4px;
 }
 
 .glazewm-workspaces .ws-btn {
     font-size: 0;
-    width: 12px;
-    height: 6px;
+    width: 10px;
+    height: 5px;
+    min-width: 10px;
+    max-width: 10px;
     background-color: var(--surface2);
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
     padding: 0;
-    margin: 0 3px;
+    margin: 0 2px;
+    overflow: hidden;
+    color: transparent !important;
 }
 
-.glazewm-workspaces .ws-btn.active_populated {
-    background-color: var(--teal);
-    width: 32px;
+.glazewm-workspaces .ws-btn .label,
+.glazewm-workspaces .ws-btn .name,
+.glazewm-workspaces .ws-btn .display-name,
+.glazewm-workspaces .ws-btn span {
+    display: none !important;
 }
 
+.glazewm-workspaces .ws-btn * {
+    display: none !important;
+}
+
+.glazewm-workspaces .ws-btn.active_populated,
 .glazewm-workspaces .ws-btn.active_empty {
-    background-color: var(--teal);
-    width: 32px;
+    background-color: var(--blue);
+    width: 22px;
+    height: 5px;
+    max-width: 22px;
+    overflow: hidden;
+    color: transparent !important;
+    border-radius: 2px;
 }
 
 .glazewm-workspaces .ws-btn.populated {
@@ -188,8 +204,8 @@
 }
 
 .clock-widget .icon {
-    color: var(--mauve);
-    font-size: 14px;
+    color: var(--blue);
+    font-size: 11px;
 }
 
 .weather-card {
@@ -520,7 +536,8 @@
     margin: 0;
     background-color: var(--base);
     border: 1px solid var(--surface1);
-    border-radius: 1000px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
 /* ─── Power Menu (hidden, keyboard-only access) ─── */
@@ -536,11 +553,18 @@
     color: transparent;
 }
 
+/* ─── Cava ─── */
+.cava-widget {
+    padding: 0;
+    margin: 0 4px;
+}
+
 /* ─── Clock ─── */
 .clock-widget .label {
-    font-size: 12px;
+    font-size: 10px;
     padding: 0 8px;
-    color: var(--text);
+    margin: 0 4px;
+    color: var(--blue);
 }
 
 /* ─── Power Menu (compact popup) ─── */
@@ -548,6 +572,7 @@
     color: var(--maroon);
     font-size: 13px;
 }
+
 
 
 .power-menu-compact {
@@ -624,4 +649,94 @@
 .power-menu-compact .icon.hover,
 .power-menu-compact .label.hover {
     color: var(--white);
+}
+
+/* ─── Weather Widget ─── */
+.weather-widget {
+    padding: 0;
+    margin: 0 4px;
+}
+
+.weather-widget .widget-container .icon {
+    font-size: 12px;
+    color: var(--accent);
+}
+
+.weather-widget .widget-container .label {
+    font-size: 10px;
+    padding: 0 6px;
+    color: var(--accent);
+}
+
+.weather-widget .widget-container .label.alt {
+    color: var(--text-muted);
+}
+
+/* ─── Volume Widget ─── */
+.volume-widget {
+    padding: 0 2px;
+    margin: 2px 6px;
+    background-color: var(--surface0);
+    border-radius: 6px;
+}
+
+.volume-widget .widget-container .icon {
+    font-size: 12px;
+    color: var(--yellow);
+}
+
+.volume-widget .widget-container .label {
+    font-size: 10px;
+    padding: 0 6px;
+    color: var(--yellow);
+}
+
+.volume-widget .widget-container .label.alt {
+    color: var(--text-muted);
+}
+
+/* ─── WiFi Widget ─── */
+.wifi-widget {
+    padding: 0 2px;
+    margin: 2px 6px;
+    background-color: var(--surface0);
+    border-radius: 6px;
+}
+
+.wifi-widget .widget-container .icon {
+    font-size: 12px;
+    color: var(--yellow);
+}
+
+.wifi-widget .widget-container .label {
+    font-size: 9px;
+    padding: 0 6px;
+    color: var(--yellow);
+}
+
+.wifi-widget .widget-container .label.alt {
+    color: var(--text-muted);
+}
+
+/* ─── Battery Widget ─── */
+.battery-widget {
+    padding: 0 2px;
+    margin: 2px 6px;
+    background-color: var(--surface0);
+    border-radius: 6px;
+}
+
+.battery-widget .widget-container .icon {
+    font-size: 14px;
+    color: var(--green);
+}
+
+.battery-widget .widget-container .label {
+    font-size: 14px;
+    padding: 0 6px;
+    color: var(--green);
+}
+
+.battery-widget .widget-container .label.alt {
+    color: var(--text-muted);
 }

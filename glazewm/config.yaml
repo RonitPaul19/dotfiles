@@ -44,14 +44,14 @@ gaps:
   scale_with_dpi: true
 
   # Gap between adjacent windows.
-  inner_gap: '10px'
+  inner_gap: '8px'
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '8px'
-    right: '12px'
-    bottom: '12px'
-    left: '12px'
+    top: '10px'
+    right: '10px'
+    bottom: '10px'
+    left: '10px'
 
 window_effects:
   # Visual effects to apply to the focused window.
@@ -301,6 +301,11 @@ keybindings:
     bindings: ['alt+shift+d']
   - commands: ['move-workspace --direction down']
     bindings: ['alt+shift+s']
+
+  # Toggle Windows Night Light.
+  - commands: ['shell-exec --hide-window powershell -NoProfile -File "%USERPROFILE%\.glzr\glazewm\toggle-nightlight.ps1"']
+    bindings: ['ctrl+alt+n']
+
 
   # Move focused window to a workspace defined in `workspaces` config.
   - commands: ['move --workspace 1', 'focus --workspace 1']

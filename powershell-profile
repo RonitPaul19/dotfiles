@@ -3,10 +3,6 @@ starship init powershell | Invoke-Expression
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
-
-function change-theme {
-    param([string]$Name)
-    python "$env:USERPROFILE\.config\theme-switcher\switcher.py" $Name
-}
-Set-Alias -Name theme -Value change-theme
-Clear-Host
+Set-Alias vim nvim
+Set-Alias ls eza
+Set-Alias ff fzf

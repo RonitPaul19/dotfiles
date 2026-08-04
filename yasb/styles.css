@@ -1,497 +1,494 @@
 :root {
-    --accent: #c4a7e7;
-    --alert-bg: rgb(246, 193, 119);
-    --alert-border: rgb(246, 193, 119);
-    --alert-text: rgb(144, 140, 170);
-    --base: #191724;
-    --black: #000000;
-    --blue: #9ccfd8;
-    --border-dark: #21202e;
-    --btn-hover-bg: rgb(224, 222, 244);
-    --button-bg: #26233a;
-    --button-hover: rgb(224, 222, 244);
-    --button-pressed: #403d52;
-    --calendar-bg: rgb(31, 29, 46);
-    --calendar-text: rgb(144, 140, 170);
-    --cancel-icon: rgb(235, 111, 146);
-    --cancel-label: rgb(235, 111, 146);
-    --card-bg: rgb(31, 29, 46);
-    --chart: #f6c177;
-    --day-active-bg: rgb(33, 32, 46);
-    --day-active-border: rgb(64, 61, 82);
-    --disabled: #524f67;
-    --edge: #9ccfd8;
-    --firefox: #eb6f92;
-    --gray: #6e6a86;
-    --green: #31748f;
-    --groove-hover: rgb(224, 222, 244);
-    --hourly-bg: #31748f;
-    --icon-dim: rgb(224, 222, 244);
-    --lavender: #c4a7e7;
-    --maroon: #eb6f92;
-    --mauve: #c4a7e7;
-    --media-bg: rgb(31, 29, 46);
-    --muted: #6e6a86;
-    --muted-alt: #908caa;
-    --paused: #6e6a86;
-    --popup-bg: rgb(31, 29, 46);
-    --popup-hover: rgb(38, 35, 58);
-    --spotify: #31748f;
-    --subtext0: #e0def4;
-    --subtext1: #e0def4;
-    --surface0: #1f1d2e;
-    --surface1: #26233a;
-    --surface2: #403d52;
-    --teal: #ebbcba;
-    --text: #e0def4;
-    --text-dim: rgb(224, 222, 244);
-    --text-muted: rgb(144, 140, 170);
-    --transparent: #191724;
-    --transparent-base: #191724;
-    --transparent-dark: #191724;
-    --weather-bg: rgb(25, 23, 36);
-    --white: #ffffff;
-    --yellow: #f6c177;
+  --accent: #cba6f7;
+  --alert-bg: #fab387;
+  --alert-border: #fab387;
+  --alert-text: #a6adc8;
+  --base: #1e1e2e;
+  --black: #11111b;
+  --blue: #89b4fa;
+  --border-dark: #181825;
+  --btn-hover-bg: #cdd6f4;
+  --button-bg: #313244;
+  --button-hover: #cdd6f4;
+  --button-pressed: #45475a;
+  --calendar-bg: #181825;
+  --calendar-text: #a6adc8;
+  --cancel-icon: #f38ba8;
+  --cancel-label: #f38ba8;
+  --card-bg: #181825;
+  --chart: #f9e2af;
+  --day-active-bg: #181825;
+  --day-active-border: #45475a;
+  --disabled: #585b70;
+  --edge: #89b4fa;
+  --firefox: #f38ba8;
+  --gray: #6c7086;
+  --green: #a6e3a1;
+  --groove-hover: #cdd6f4;
+  --hourly-bg: #89b4fa;
+  --icon-dim: #cdd6f4;
+  --lavender: #b4befe;
+  --maroon: #eba0ac;
+  --mauve: #cba6f7;
+  --media-bg: #181825;
+  --muted: #6c7086;
+  --muted-alt: #9399b2;
+  --paused: #6c7086;
+  --popup-bg: #181825;
+  --popup-hover: #313244;
+  --spotify: #a6e3a1;
+  --subtext0: #a6adc8;
+  --subtext1: #bac2de;
+  --surface0: #313244;
+  --surface1: #45475a;
+  --surface2: #585b70;
+  --teal: #94e2d5;
+  --text: #cdd6f4;
+  --text-dim: #cdd6f4;
+  --text-muted: #a6adc8;
+  --transparent: #1e1e2e;
+  --transparent-base: #1e1e2e;
+  --transparent-dark: #1e1e2e;
+  --weather-bg: #11111b;
+  --white: #ffffff;
+  --yellow: #f9e2af;
 }
 
 * {
-    font-size: 11px;
-    color: var(--text);
-    font-weight: 600;
-    font-family: "JetBrainsMono NFP";
-    margin: 0;
-    padding: 0;
+  font-size: 11px;
+  color: var(--text);
+  font-weight: 600;
+  font-family: "JetBrainsMono NFP";
+  margin: 0;
+  padding: 0;
 }
 
-
 .glazewm-workspaces {
-    margin: 0 4px;
+  margin: 0 4px;
 }
 
 .glazewm-workspaces .ws-btn {
-    font-size: 0;
-    width: 10px;
-    height: 5px;
-    min-width: 10px;
-    max-width: 10px;
-    background-color: var(--surface2);
-    border: none;
-    border-radius: 2px;
-    padding: 0;
-    margin: 0 2px;
-    overflow: hidden;
-    color: transparent !important;
+  font-size: 0;
+  width: 10px;
+  height: 5px;
+  min-width: 10px;
+  max-width: 10px;
+  background-color: var(--surface2);
+  border: none;
+  border-radius: 2px;
+  padding: 0;
+  margin: 0 2px;
+  overflow: hidden;
+  color: transparent !important;
 }
 
 .glazewm-workspaces .ws-btn .label,
 .glazewm-workspaces .ws-btn .name,
 .glazewm-workspaces .ws-btn .display-name,
 .glazewm-workspaces .ws-btn span {
-    display: none !important;
+  display: none !important;
 }
 
 .glazewm-workspaces .ws-btn * {
-    display: none !important;
+  display: none !important;
 }
 
 .glazewm-workspaces .ws-btn.active_populated,
 .glazewm-workspaces .ws-btn.active_empty {
-    background-color: var(--blue);
-    width: 22px;
-    height: 5px;
-    max-width: 22px;
-    overflow: hidden;
-    color: transparent !important;
-    border-radius: 2px;
+  background-color: var(--blue);
+  width: 22px;
+  height: 5px;
+  max-width: 22px;
+  overflow: hidden;
+  color: transparent !important;
+  border-radius: 2px;
 }
 
 .glazewm-workspaces .ws-btn.populated {
-    background-color: var(--surface2);
+  background-color: var(--surface2);
 }
 
 .glazewm-workspaces .ws-btn.empty {
-    background-color: var(--surface0);
+  background-color: var(--surface0);
 }
 
 .glazewm-workspaces .ws-btn:hover,
 .glazewm-workspaces .ws-btn.populated:hover,
 .glazewm-workspaces .ws-btn.empty:hover {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 
 .glazewm-tiling-direction {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 .glazewm-tiling-direction .btn {
-    font-size: 18px;
-    width: 14px;
-    padding: 0 4px 0 4px;
-    color: var(--text);
-    border: none;
+  font-size: 18px;
+  width: 14px;
+  padding: 0 4px 0 4px;
+  color: var(--text);
+  border: none;
 }
 
 .glazewm-tiling-direction .btn:hover {
-    background-color: var(--gray);
+  background-color: var(--gray);
 }
 
 .uptime {
-    font-size: 14px;
-    margin-bottom: 10px;
-    color: var(--text-muted);
-    font-weight: 600;
-    font-family: "JetBrainsMono NFP";
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-family: "JetBrainsMono NFP";
 }
 
-
 .power-menu-popup .button {
-    padding: 0;
-    width: 160px;
-    height: 240px;
-    border-radius: 4px;
-    background-color: var(--popup-bg);
-    font-family: "JetBrainsMono NFP";
-    color: var(--white);
-    border: 4px solid var(--transparent);
+  padding: 0;
+  width: 160px;
+  height: 240px;
+  border-radius: 4px;
+  background-color: var(--popup-bg);
+  font-family: "JetBrainsMono NFP";
+  color: var(--white);
+  border: 4px solid var(--transparent);
 }
 
 .power-menu-popup .button.hover {
-    background-color: var(--popup-hover);
-    border: 4px solid var(--popup-hover);
+  background-color: var(--popup-hover);
+  border: 4px solid var(--popup-hover);
 }
 
 .power-menu-popup .button .label {
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--text-dim);
-    font-family: "JetBrainsMono NFP";
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dim);
+  font-family: "JetBrainsMono NFP";
 }
 
 .power-menu-popup .button .icon {
-    font-size: 64px;
-    padding-top: 54px;
-    color: var(--icon-dim);
+  font-size: 64px;
+  padding-top: 54px;
+  color: var(--icon-dim);
 }
 
 .power-menu-popup .button.cancel {
-    height: 20px !important;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  height: 20px !important;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .power-menu-popup .button.cancel .icon {
-    font-size: 24px !important;
-    padding-top: 0px !important;
-    color: var(--cancel-icon);
+  font-size: 24px !important;
+  padding-top: 0px !important;
+  color: var(--cancel-icon);
 }
 
 .power-menu-popup .button.cancel .label {
-    margin-bottom: 0px !important;
-    color: var(--cancel-label);
+  margin-bottom: 0px !important;
+  color: var(--cancel-label);
 }
 
 .icon {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .start-menu .icon {
-    font-size: 18px;
-    color: var(--blue)
+  font-size: 18px;
+  color: var(--blue);
 }
 
 .clock-widget .icon {
-    color: var(--blue);
-    font-size: 11px;
+  color: var(--blue);
+  font-size: 11px;
 }
 
 .weather-card {
-    background-color: var(--weather-bg);
+  background-color: var(--weather-bg);
 }
 
 .weather-card-today {
-    border: 1px solid var(--border-dark);
-    border-radius: 8px;
-    background-color: var(--card-bg);
+  border: 1px solid var(--border-dark);
+  border-radius: 8px;
+  background-color: var(--card-bg);
 }
 
 .weather-card-today .label {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .weather-card-today .label.location {
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .weather-card-today .label.alert {
-    font-size: 12px;
-    font-weight: 700;
-    background-color: var(--alert-bg);
-    border: 1px solid var(--alert-border);
-    color: var(--alert-text);
-    border-radius: 6px;
-    padding: 5px 0;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: var(--alert-bg);
+  border: 1px solid var(--alert-border);
+  color: var(--alert-text);
+  border-radius: 6px;
+  padding: 5px 0;
 }
 
 .weather-card-day {
-    border: 1px solid var(--surface1);
-    border-radius: 8px;
-    background-color: var(--card-bg);
+  border: 1px solid var(--surface1);
+  border-radius: 8px;
+  background-color: var(--card-bg);
 }
 
 .weather-card-day.active {
-    background-color: var(--day-active-bg);
-    border: 1px solid var(--day-active-border);
+  background-color: var(--day-active-bg);
+  border: 1px solid var(--day-active-border);
 }
 
 .weather-card-day:hover {
-    background-color: var(--day-active-bg);
+  background-color: var(--day-active-bg);
 }
 
 .weather-card-day .label {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .weather-card .hourly-container {
-    border: 1px solid var(--border-dark);
-    background-color: var(--hourly-bg);
-    border-radius: 8px;
-    min-height: 150px;
+  border: 1px solid var(--border-dark);
+  background-color: var(--hourly-bg);
+  border-radius: 8px;
+  min-height: 150px;
 }
 
 .weather-card .hourly-data {
-    background-color: var(--chart);
-    font-size: 12px;
-    font-weight: bold;
+  background-color: var(--chart);
+  font-size: 12px;
+  font-weight: bold;
 }
 
-
 .media-menu {
-    min-width: 420px;
-    max-width: 420px;
-    background-color: var(--media-bg);
+  min-width: 420px;
+  max-width: 420px;
+  background-color: var(--media-bg);
 }
 
 .media-menu .title,
 .media-menu .artist,
 .media-menu .source {
-    font-size: 14px;
-    font-weight: 600;
-    margin-left: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .media-menu .artist {
-    font-size: 13px;
-    color: var(--muted);
-    margin-top: 0px;
-    margin-bottom: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .media-menu .source {
-    font-size: 11px;
-    color: var(--black);
-    font-weight: normal;
-    border-radius: 3px;
-    background-color: var(--subtext1);
-    padding: 2px 4px;
+  font-size: 11px;
+  color: var(--black);
+  font-weight: normal;
+  border-radius: 3px;
+  background-color: var(--subtext1);
+  padding: 2px 4px;
 }
 
 .media-menu .source.firefox {
-    background-color: var(--firefox);
-    color: var(--white);
+  background-color: var(--firefox);
+  color: var(--white);
 }
 
 .media-menu .source.spotify {
-    background-color: var(--spotify);
-    color: var(--white);
+  background-color: var(--spotify);
+  color: var(--white);
 }
 
 .media-menu .source.edge {
-    background-color: var(--edge);
-    color: var(--white);
+  background-color: var(--edge);
+  color: var(--white);
 }
 
 .media-menu .source.windows-media {
-    background-color: var(--edge);
-    color: var(--white);
+  background-color: var(--edge);
+  color: var(--white);
 }
 
 .media-menu .btn {
-    font-family: "Segoe Fluent Icons";
-    font-size: 14px;
-    font-weight: 400;
-    margin: 10px 2px 0px 2px;
-    min-width: 40px;
-    max-width: 40px;
-    min-height: 40px;
-    max-height: 40px;
-    border-radius: 20px;
+  font-family: "Segoe Fluent Icons";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 2px 0px 2px;
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  border-radius: 20px;
 }
 
 .media-menu .btn.prev {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .media-menu .btn:hover {
-    color: var(--white);
-    background-color: var(--btn-hover-bg);
+  color: var(--white);
+  background-color: var(--btn-hover-bg);
 }
 
 .media-menu .btn.play {
-    background-color: var(--btn-hover-bg);
-    font-size: 20px
+  background-color: var(--btn-hover-bg);
+  font-size: 20px;
 }
 
 .media-menu .btn.disabled:hover,
 .media-menu .btn.disabled {
-    color: var(--disabled);
-    background-color: var(--transparent-dark);
+  color: var(--disabled);
+  background-color: var(--transparent-dark);
 }
 
 .media-menu .playback-time {
-    font-size: 13px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--muted-alt);
-    margin-top: 20px;
-    min-width: 100px;
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--muted-alt);
+  margin-top: 20px;
+  min-width: 100px;
 }
 
 .media-menu .progress-slider {
-    height: 10px;
-    margin: 5px 4px;
-    border-radius: 3px;
+  height: 10px;
+  margin: 5px 4px;
+  border-radius: 3px;
 }
 
 .media-menu .progress-slider::groove {
-    background: transparent;
-    height: 2px;
-    border-radius: 3px;
-    background: var(--btn-hover-bg);
+  background: transparent;
+  height: 2px;
+  border-radius: 3px;
+  background: var(--btn-hover-bg);
 }
 
 .media-menu .progress-slider::groove:hover {
-    background: transparent;
-    height: 6px;
-    border-radius: 3px;
-    background: var(--groove-hover);
+  background: transparent;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--groove-hover);
 }
 
 .media-menu .progress-slider::sub-page {
-    background: var(--white);
-    border-radius: 3px;
-    height: 4px;
+  background: var(--white);
+  border-radius: 3px;
+  height: 4px;
 }
 
 .media-widget .btn {
-    padding: 0;
-    margin: 0 -6px;
-    padding-left: 4px;
+  padding: 0;
+  margin: 0 -6px;
+  padding-left: 4px;
 }
 
 .pomodoro-widget {
-    padding: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .pomodoro-widget .icon {
-    font-size: 12px;
-    padding-right: 4px;
+  font-size: 12px;
+  padding-right: 4px;
 }
 
 .pomodoro-widget .label.paused,
 .pomodoro-widget .icon.paused {
-    color: var(--paused);
+  color: var(--paused);
 }
 
 .pomodoro-widget .label.work,
 .pomodoro-widget .icon.work {
-    color: var(--green);
+  color: var(--green);
 }
 
 .pomodoro-widget .label.break,
 .pomodoro-widget .icon.break {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 .pomodoro-menu {
-    background-color: var(--card-bg);
-    border-radius: 8px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
 }
 
 .pomodoro-menu .header {
-    font-size: 16px;
-    font-weight: 600;
-    max-height: 0px;
-    color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  max-height: 0px;
+  color: var(--white);
 }
 
 .pomodoro-menu .status {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
 }
 
 .pomodoro-menu .session {
-    font-size: 12px;
-    color: var(--subtext0);
+  font-size: 12px;
+  color: var(--subtext0);
 }
 
 .pomodoro-menu .button {
-    background-color: var(--button-bg);
-    color: var(--text);
-    border: none;
-    border-radius: 4px;
-    padding: 6px 12px;
+  background-color: var(--button-bg);
+  color: var(--text);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
 }
 
 .pomodoro-menu .button.start {
-    background-color: var(--button-bg);
+  background-color: var(--button-bg);
 }
 
 .pomodoro-menu .button.reset {
-    background-color: var(--button-bg);
+  background-color: var(--button-bg);
 }
 
 .pomodoro-menu .button:hover {
-    background-color: var(--button-hover);
+  background-color: var(--button-hover);
 }
 
 .pomodoro-menu .button.pause {
-    background-color: var(--green);
-    color: var(--base);
+  background-color: var(--green);
+  color: var(--base);
 }
 
 .pomodoro-menu .button:pressed {
-    background-color: var(--button-pressed);
+  background-color: var(--button-pressed);
 }
 
 .calendar {
-    background-color: var(--calendar-bg);
+  background-color: var(--calendar-bg);
 }
 
 .calendar .calendar-table,
 .calendar .calendar-table::item {
-    background-color: var(--transparent-base);
-    color: var(--calendar-text);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
+  background-color: var(--transparent-base);
+  color: var(--calendar-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
 }
 
 .calendar .calendar-table::item:selected {
-    color: var(--white);
-    background-color: var(--accent);
-    border-radius: 10px;
+  color: var(--white);
+  background-color: var(--accent);
+  border-radius: 10px;
 }
 
 .calendar .day-label {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .calendar .day-label,
@@ -499,244 +496,243 @@
 .calendar .date-label,
 .calendar .week-label,
 .calendar .holiday-label {
-    font-family: 'Segoe UI';
-    font-size: 16px;
-    color: var(--white);
-    font-weight: 700;
-    min-width: 180px;
-    max-width: 180px;
+  font-family: "Segoe UI";
+  font-size: 16px;
+  color: var(--white);
+  font-weight: 700;
+  min-width: 180px;
+  max-width: 180px;
 }
 
 .calendar .week-label,
 .calendar .holiday-label {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--calendar-text);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--calendar-text);
 }
 
 .calendar .holiday-label {
-    color: var(--calendar-text);
-    font-weight: 700;
+  color: var(--calendar-text);
+  font-weight: 700;
 }
 
 .calendar .month-label {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .calendar .date-label {
-    font-size: 88px;
-    font-weight: 900;
-    color: var(--white);
-    margin-top: -20px;
+  font-size: 88px;
+  font-weight: 900;
+  color: var(--white);
+  margin-top: -20px;
 }
 
 /* ─── Bar (floating pill) ─── */
 .yasb-bar {
-    padding: 0;
-    margin: 0;
-    background-color: var(--base);
-    border: 1px solid var(--surface1);
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+  padding: 0;
+  margin: 0;
+  background-color: var(--base);
+  padding: 2 4px;
+  /* border: 1px solid var(--surface1); */
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 /* ─── Power Menu (hidden, keyboard-only access) ─── */
 .power-menu-widget {
-    padding: 0;
-    margin: 0;
-    min-width: 0;
-    max-width: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  max-width: 0;
 }
 
 .power-menu-widget .label {
-    font-size: 0;
-    color: transparent;
+  font-size: 0;
+  color: transparent;
 }
 
 /* ─── Cava ─── */
 .cava-widget {
-    padding: 0;
-    margin: 0 4px;
+  padding: 0;
+  margin: 0 4px;
 }
 
 /* ─── Clock ─── */
 .clock-widget .label {
-    font-size: 10px;
-    padding: 0 8px;
-    margin: 0 4px;
-    color: var(--blue);
+  font-size: 10px;
+  padding: 0 8px;
+  margin: 0 4px;
+  color: var(--blue);
 }
 
 /* ─── Power Menu (compact popup) ─── */
 .power-menu-widget .label {
-    color: var(--maroon);
-    font-size: 13px;
+  color: var(--maroon);
+  font-size: 13px;
 }
 
-
-
 .power-menu-compact {
-    min-width: 300px;
-    max-width: 300px;
-    background-color: var(--transparent);
-    border: 1px solid var(--surface1);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  min-width: 300px;
+  max-width: 300px;
+  background-color: var(--transparent);
+  border: 1px solid var(--surface1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .power-menu-compact .profile-info {
-    padding: 12px 0 20px 0;
+  padding: 12px 0 20px 0;
 }
 
 .power-menu-compact .profile-info .profile-username {
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--text);
-    font-family: "JetBrainsMono NFP";
-    margin-top: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  font-family: "JetBrainsMono NFP";
+  margin-top: 4px;
 }
 
 .power-menu-compact .profile-info .profile-account-type {
-    font-size: 11px;
-    color: var(--muted);
-    font-weight: 600;
-    margin-top: 6px;
-    font-family: "JetBrainsMono NFP";
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 600;
+  margin-top: 6px;
+  font-family: "JetBrainsMono NFP";
 }
 
 .power-menu-compact .buttons {
-    background-color: var(--surface0);
-    margin: 0 8px 8px 8px;
-    border-radius: 8px;
+  background-color: var(--surface0);
+  margin: 0 8px 8px 8px;
+  border-radius: 8px;
 }
 
 .power-menu-compact .button {
-    padding: 8px 14px;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
+  padding: 8px 14px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
 }
 
 .power-menu-compact .button.hover {
-    background-color: var(--surface1);
+  background-color: var(--surface1);
 }
 
 .power-menu-compact .button.lock.hover {
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .power-menu-compact .button.shutdown.hover {
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .power-menu-compact .button .icon {
-    font-size: 13px;
-    color: var(--text-dim);
-    padding-right: 10px;
-    min-width: 18px;
+  font-size: 13px;
+  color: var(--text-dim);
+  padding-right: 10px;
+  min-width: 18px;
 }
 
 .power-menu-compact .button .label {
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--text);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
 }
 
 .power-menu-compact .icon.hover,
 .power-menu-compact .label.hover {
-    color: var(--white);
+  color: var(--white);
 }
 
 /* ─── Weather Widget ─── */
 .weather-widget {
-    padding: 0;
-    margin: 0 4px;
+  padding: 0;
+  margin: 0 4px;
 }
 
 .weather-widget .widget-container .icon {
-    font-size: 12px;
-    color: var(--accent);
+  font-size: 12px;
+  color: var(--accent);
 }
 
 .weather-widget .widget-container .label {
-    font-size: 10px;
-    padding: 0 6px;
-    color: var(--accent);
+  font-size: 10px;
+  padding: 0 6px;
+  color: var(--accent);
 }
 
 .weather-widget .widget-container .label.alt {
-    color: var(--text-muted);
+  color: var(--text-muted);
 }
 
 /* ─── Volume Widget ─── */
 .volume-widget {
-    padding: 0 2px;
-    margin: 2px 6px;
-    background-color: var(--surface0);
-    border-radius: 6px;
+  padding: 0 2px;
+  margin: 2px 6px;
+  background-color: var(--surface0);
+  border-radius: 6px;
 }
 
 .volume-widget .widget-container .icon {
-    font-size: 12px;
-    color: var(--yellow);
+  font-size: 12px;
+  color: var(--yellow);
 }
 
 .volume-widget .widget-container .label {
-    font-size: 10px;
-    padding: 0 6px;
-    color: var(--yellow);
+  font-size: 10px;
+  padding: 0 6px;
+  color: var(--yellow);
 }
 
 .volume-widget .widget-container .label.alt {
-    color: var(--text-muted);
+  color: var(--text-muted);
 }
 
 /* ─── WiFi Widget ─── */
 .wifi-widget {
-    padding: 0 2px;
-    margin: 2px 6px;
-    background-color: var(--surface0);
-    border-radius: 6px;
+  padding: 0 2px;
+  margin: 2px 6px;
+  background-color: var(--surface0);
+  border-radius: 6px;
 }
 
 .wifi-widget .widget-container .icon {
-    font-size: 12px;
-    color: var(--yellow);
+  font-size: 12px;
+  color: var(--yellow);
 }
 
 .wifi-widget .widget-container .label {
-    font-size: 9px;
-    padding: 0 6px;
-    color: var(--yellow);
+  font-size: 9px;
+  padding: 0 6px;
+  color: var(--yellow);
 }
 
 .wifi-widget .widget-container .label.alt {
-    color: var(--text-muted);
+  color: var(--text-muted);
 }
 
 /* ─── Battery Widget ─── */
 .battery-widget {
-    padding: 0 2px;
-    margin: 2px 6px;
-    background-color: var(--surface0);
-    border-radius: 6px;
+  padding: 0 2px;
+  margin: 2px 6px;
+  background-color: var(--surface0);
+  border-radius: 6px;
 }
 
 .battery-widget .widget-container .icon {
-    font-size: 14px;
-    color: var(--green);
+  font-size: 14px;
+  color: var(--green);
 }
 
 .battery-widget .widget-container .label {
-    font-size: 14px;
-    padding: 0 6px;
-    color: var(--green);
+  font-size: 10px;
+  padding: 0 6px;
+  color: var(--green);
 }
 
 .battery-widget .widget-container .label.alt {
-    color: var(--text-muted);
+  color: var(--text-muted);
 }

@@ -1,8 +1,8 @@
 Clear-Host
-starship init powershell | Invoke-Expression
+Invoke-Expression (&starship init powershell)
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
 Set-Alias vim nvim
 Set-Alias ls eza
-Set-Alias ff fzf
+Set-Alias ff fzfn

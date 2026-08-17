@@ -18,8 +18,8 @@ bars:
       always_on_top: false
       windows_app_bar: true
     dimensions:
-      width: 900
-      height: 25
+      width: 450
+      height: 30
     padding:
       top: 0
       left: 0
@@ -37,12 +37,12 @@ widgets:
       label: "<span>{icon}</span> {level}"
       label_alt: "{level}"
       volume_icons:
-      - "" # Muted
-      - "" # 0–10%
-      - "" # 11–30%
-      - "" # 31–60%
-      - "" # 61–100%
-    keybindings:
+        - "" # Muted
+        - "" # 0–10%
+        - "" # 11–30%
+        - "" # 31–60%
+        - "" # 61–100%
+      keybindings:
         - keys: "ctrl+alt+m"
           action: "toggle_mute"
         - keys: "ctrl+alt+up"
@@ -113,8 +113,8 @@ widgets:
           action: "toggle_calendar"
       calendar:
         alignment: "center"
-        offset_left: -60
-        offset_top: 10
+        offset_left: -55
+        offset_top: 6
       callbacks:
         on_left: "toggle_calendar"
   power_menu:
@@ -135,7 +135,7 @@ widgets:
         border_color: "System"
         alignment: "center"
         direction: "down"
-        offset_top: 10
+        offset_top: 6
         offset_left: -30
       profile_image_size: 64
       buttons:

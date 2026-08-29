@@ -44,13 +44,13 @@ gaps:
   scale_with_dpi: true
 
   # Gap between adjacent windows.
-  inner_gap: "6px"
+  inner_gap: "8px"
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: "6px"
+    top: "8px"
     right: "10px"
-    bottom: "8px"
+    bottom: "10px"
     left: "10px"
 
 window_effects:
@@ -60,7 +60,7 @@ window_effects:
     # ** Exclusive to Windows 11 due to API limitations.
     border:
       enabled: false
-      color: "#89b4fa"
+      color: "#9CCFD8"
 
     # Remove the title bar from the window's frame. Note that this can
     # cause rendering issues for some applications.
@@ -72,7 +72,7 @@ window_effects:
     corner_style:
       enabled: true
       # Allowed values: 'square', 'rounded', 'small_rounded'.
-      style: "rounded"
+      style: "square"
 
     # Change the transparency of the window.
     transparency:
@@ -83,12 +83,12 @@ window_effects:
   other_windows:
     border:
       enabled: false
-      color: "#4c4f69"
+      color: "#A3AABE"
     hide_title_bar:
       enabled: true
     corner_style:
       enabled: true
-      style: "rounded"
+      style: "square"
     transparency:
       enabled: false
       opacity: "90%"

@@ -1,8 +1,20 @@
 Clear-Host
+
 Invoke-Expression (&starship init powershell)
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
+
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
-Set-Alias vim nvim
+
 Set-Alias ls eza
-Set-Alias ff fzfn
+Set-Alias vim nvim
+
+function ltree {
+    eza --tree $args
+}
+
+function theme {
+  python "$HOME\.config\windows-11-theme-switcher\\switcher.py" $args
+}
+
+Clear-Host

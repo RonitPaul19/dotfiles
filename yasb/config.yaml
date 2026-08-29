@@ -26,6 +26,10 @@ bars:
       bottom: 0
       right: 0
     widgets:
+      # left: ["volume", "cava"]
+      # center: ["glazewm-workspaces", "power_menu", "clock"]
+      # right: ["wifi", "battery"]
+
       left: ["volume", "cava"]
       center: ["glazewm-workspaces", "power_menu", "clock"]
       right: ["wifi", "battery"]
@@ -37,10 +41,10 @@ widgets:
       label: "<span>{icon}</span> {level}"
       label_alt: "{level}"
       volume_icons:
-        - "" # Muted
+        - "" # Muted
         - "" # 0–10%
         - "" # 11–30%
-        - "" # 31–60%
+        - "" # 31–60%
         - "" # 61–100%
       keybindings:
         - keys: "ctrl+alt+m"
@@ -135,8 +139,8 @@ widgets:
         border_color: "System"
         alignment: "center"
         direction: "down"
-        offset_top: 6
-        offset_left: -30
+        offset_top: 10
+        offset_left: -32
       profile_image_size: 64
       buttons:
         lock: ["", "Lock"]

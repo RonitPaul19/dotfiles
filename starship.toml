@@ -1,5 +1,7 @@
 format = "$directory$git_branch$git_status$python$character"
 
+add_newline = false
+
 [directory]
 format = "📂 $path "
 truncate_to_repo = false
@@ -14,5 +16,5 @@ format = "[$all_status$ahead_behind]($style) "
 format = "🐍 ($virtualenv) "
 
 [character]
-success_symbol = "[->](bold green)"
-error_symbol = "[->](bold red)"
+success_symbol = "[➜ :](bold green)"
+error_symbol = "[➜ :](bold red)"

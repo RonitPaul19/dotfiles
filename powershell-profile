@@ -17,4 +17,11 @@ function theme {
   python "$HOME\.config\windows-11-theme-switcher\\switcher.py" $args
 }
 
+function cdf {
+  $dir = fd --type d | fzf
+    if ($dir) {
+      Set-Location $dir
+    }
+}
+
 Clear-Host

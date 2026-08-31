@@ -1,64 +1,64 @@
 :root {
-        --accent: #c4a7e7;
-        --alert-bg: rgb(246, 193, 119);
-        --alert-border: rgb(246, 193, 119);
-        --alert-text: rgb(144, 140, 170);
-        --base: #191724;
+        --accent: #bb9af7;
+        --alert-bg: rgb(224, 175, 104);
+        --alert-border: rgb(224, 175, 104);
+        --alert-text: rgb(169, 177, 214);
+        --base: #1a1b26;
         --black: #000000;
-        --blue: #9ccfd8;
-        --border-dark: #21202e;
-        --btn-hover-bg: rgb(224, 222, 244);
-        --button-bg: #26233a;
-        --button-hover: rgb(224, 222, 244);
-        --button-pressed: #403d52;
-        --calendar-bg: rgb(31, 29, 46);
-        --calendar-text: rgb(144, 140, 170);
-        --cancel-icon: rgb(235, 111, 146);
-        --cancel-label: rgb(235, 111, 146);
-        --card-bg: rgb(31, 29, 46);
-        --chart: #f6c177;
-        --day-active-bg: rgb(33, 32, 46);
-        --day-active-border: rgb(64, 61, 82);
-        --disabled: #524f67;
-        --edge: #9ccfd8;
-        --firefox: #eb6f92;
-        --gray: #6e6a86;
-        --green: #31748f;
-        --groove-hover: rgb(224, 222, 244);
-        --hourly-bg: #31748f;
-        --icon-dim: rgb(224, 222, 244);
-        --lavender: #c4a7e7;
-        --maroon: #eb6f92;
-        --mauve: #c4a7e7;
-        --media-bg: rgb(31, 29, 46);
-        --muted: #6e6a86;
-        --muted-alt: #908caa;
-        --paused: #6e6a86;
-        --popup-bg: rgb(31, 29, 46);
-        --popup-hover: rgb(38, 35, 58);
-        --spotify: #31748f;
-        --subtext0: #e0def4;
-        --subtext1: #e0def4;
-        --surface0: #1f1d2e;
-        --surface1: #26233a;
-        --surface2: #403d52;
-        --teal: #ebbcba;
-        --text: #e0def4;
-        --text-dim: rgb(224, 222, 244);
-        --text-muted: rgb(144, 140, 170);
-        --transparent: #191724;
-        --transparent-base: #191724;
-        --transparent-dark: #191724;
-    --weather-bg: rgb(25, 23, 36);
+        --blue: #7aa2f7;
+        --border-dark: #1f2335;
+        --btn-hover-bg: rgb(192, 202, 245);
+        --button-bg: #24283b;
+        --button-hover: rgb(192, 202, 245);
+        --button-pressed: #3b4261;
+        --calendar-bg: rgb(31, 35, 53);
+        --calendar-text: rgb(169, 177, 214);
+        --cancel-icon: rgb(247, 118, 142);
+        --cancel-label: rgb(247, 118, 142);
+        --card-bg: rgb(31, 35, 53);
+        --chart: #ff9e64;
+        --day-active-bg: rgb(26, 27, 38);
+        --day-active-border: rgb(59, 66, 97);
+        --disabled: #565f89;
+        --edge: #7aa2f7;
+        --firefox: #f7768e;
+        --gray: #565f89;
+        --green: #9ece6a;
+        --groove-hover: rgb(192, 202, 245);
+        --hourly-bg: #9ece6a;
+        --icon-dim: rgb(192, 202, 245);
+        --lavender: #bb9af7;
+        --maroon: #f7768e;
+        --mauve: #bb9af7;
+        --media-bg: rgb(31, 35, 53);
+        --muted: #565f89;
+        --muted-alt: #6f7bb6;
+        --paused: #565f89;
+        --popup-bg: rgb(31, 35, 53);
+        --popup-hover: rgb(36, 40, 59);
+        --spotify: #9ece6a;
+        --subtext0: #a9b1d6;
+        --subtext1: #c0caf5;
+        --surface0: #1f2335;
+        --surface1: #24283b;
+        --surface2: #3b4261;
+        --teal: #1abc9c;
+        --text: #c0caf5;
+        --text-dim: rgb(192, 202, 245);
+        --text-muted: rgb(169, 177, 214);
+        --transparent: #1a1b26;
+        --transparent-base: #1a1b26;
+        --transparent-dark: #1a1b26;
+    --weather-bg: rgb(26, 27, 38);
     --white: #ffffff;
-        --yellow: #f6c177;
+        --yellow: #e0af68;
             }
 
 * {
   font-size: 11px;
+  font-family: "Iosevka NFP";
+  font-weight: 700;
   color: var(--text);
-  font-weight: 600;
-  font-family: "JetBrainsMono NFP";
   margin: 0;
   padding: 0;
 }
@@ -141,7 +141,6 @@
   margin-bottom: 10px;
   color: var(--text-muted);
   font-weight: 600;
-  font-family: "JetBrainsMono NFP";
 }
 
 .power-menu-popup .button {
@@ -150,7 +149,6 @@
   height: 240px;
   border-radius: 4px;
   background-color: var(--popup-bg);
-  font-family: "JetBrainsMono NFP";
   color: var(--white);
   border: 4px solid var(--transparent);
 }
@@ -165,7 +163,6 @@
   font-size: 16px;
   font-weight: 600;
   color: var(--text-dim);
-  font-family: "JetBrainsMono NFP";
 }
 
 .power-menu-popup .button .icon {
@@ -203,7 +200,7 @@
 
 .clock-widget .icon {
   color: var(--blue);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .weather-card {
@@ -279,7 +276,6 @@
   font-size: 14px;
   font-weight: 600;
   margin-left: 10px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .media-menu .artist {
@@ -319,7 +315,6 @@
 }
 
 .media-menu .btn {
-  font-family: "Segoe Fluent Icons";
   font-size: 14px;
   font-weight: 400;
   margin: 10px 2px 0px 2px;
@@ -352,7 +347,6 @@
 
 .media-menu .playback-time {
   font-size: 13px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--muted-alt);
   margin-top: 20px;
   min-width: 100px;
@@ -474,7 +468,6 @@
 .calendar .calendar-table::item {
   background-color: var(--transparent-base);
   color: var(--calendar-text);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   border: none;
@@ -496,7 +489,6 @@
 .calendar .date-label,
 .calendar .week-label,
 .calendar .holiday-label {
-  font-family: "Segoe UI";
   font-size: 16px;
   color: var(--white);
   font-weight: 700;
@@ -529,14 +521,12 @@
 
 /* ─── Bar (floating pill) ─── */
 .yasb-bar {
-  padding: 0;
+  padding-top: 3px;
   margin: 0;
   background-color: var(--base);
-  padding: 3 2px;
-  /* border: 1px solid var(--surface1); */
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  /* border-radius: 1000px; */
+  /* border-bottom-left-radius: 20px; */
+  /* border-bottom-right-radius: 20px; */
+  border-radius: 1000px;
 }
 
 /* ─── Power Menu (hidden, keyboard-only access) ─── */
@@ -560,7 +550,7 @@
 
 /* ─── Clock ─── */
 .clock-widget .label {
-  font-size: 11px;
+  font-size: 13px;
   padding: 0 8px;
   margin: 0 4px;
   color: var(--blue);
@@ -591,7 +581,6 @@
   font-size: 15px;
   font-weight: 600;
   color: var(--text);
-  font-family: "JetBrainsMono NFP";
   margin-top: 4px;
 }
 
@@ -600,7 +589,6 @@
   color: var(--muted);
   font-weight: 600;
   margin-top: 6px;
-  font-family: "JetBrainsMono NFP";
 }
 
 .power-menu-compact .buttons {

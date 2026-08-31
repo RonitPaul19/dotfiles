@@ -18,21 +18,15 @@ bars:
       always_on_top: false
       windows_app_bar: true
     dimensions:
-      width: 450
-      height: 30
+      width: 105
+      height: 28
     padding:
-      top: 0
+      top: 8
       left: 0
       bottom: 0
       right: 0
     widgets:
-      # left: ["volume", "cava"]
-      # center: ["glazewm-workspaces", "power_menu", "clock"]
-      # right: ["wifi", "battery"]
-
-      left: ["volume", "cava"]
-      center: ["glazewm-workspaces", "power_menu", "clock"]
-      right: ["wifi", "battery"]
+      center: ["clock", "power_menu"]
 
 widgets:
   volume:
@@ -117,8 +111,8 @@ widgets:
           action: "toggle_calendar"
       calendar:
         alignment: "center"
-        offset_left: -55
-        offset_top: 6
+        offset_left: -15
+        offset_top: -29
       callbacks:
         on_left: "toggle_calendar"
   power_menu:
@@ -139,14 +133,14 @@ widgets:
         border_color: "System"
         alignment: "center"
         direction: "down"
-        offset_top: 10
-        offset_left: -32
+        offset_top: -29
+        offset_left: -30
       profile_image_size: 64
       buttons:
-        lock: ["", "Lock"]
-        sleep: ["", "Sleep"]
-        restart: ["", "Restart"]
-        shutdown: ["⏻", "Shut Down"]
-        cancel: ["󰜺", "Cancel"]
+        lock: [" ", "Lock"]
+        sleep: [" ", "Sleep"]
+        restart: [" ", "Restart"]
+        shutdown: ["⏻ ", "Shut Down"]
+        cancel: ["󰜺 ", "Cancel"]
       callbacks:
         on_left: "toggle_power_menu"

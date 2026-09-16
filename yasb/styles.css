@@ -1,59 +1,65 @@
+/* ╔══════════════════════════════════════════════════════════════╗
+   ║  1 · THEME VARIABLES                                         ║
+   ╚══════════════════════════════════════════════════════════════╝ */
 :root {
-        --accent: #bb9af7;
-        --alert-bg: rgb(224, 175, 104);
-        --alert-border: rgb(224, 175, 104);
-        --alert-text: rgb(169, 177, 214);
-        --base: #1a1b26;
+        --accent: #c4a7e7;
+        --alert-bg: rgb(246, 193, 119);
+        --alert-border: rgb(246, 193, 119);
+        --alert-text: rgb(144, 140, 170);
+        --base: #191724;
         --black: #000000;
-        --blue: #7aa2f7;
-        --border-dark: #1f2335;
-        --btn-hover-bg: rgb(192, 202, 245);
-        --button-bg: #24283b;
-        --button-hover: rgb(192, 202, 245);
-        --button-pressed: #3b4261;
-        --calendar-bg: rgb(31, 35, 53);
-        --calendar-text: rgb(169, 177, 214);
-        --cancel-icon: rgb(247, 118, 142);
-        --cancel-label: rgb(247, 118, 142);
-        --card-bg: rgb(31, 35, 53);
-        --chart: #ff9e64;
-        --day-active-bg: rgb(26, 27, 38);
-        --day-active-border: rgb(59, 66, 97);
-        --disabled: #565f89;
-        --edge: #7aa2f7;
-        --firefox: #f7768e;
-        --gray: #565f89;
-        --green: #9ece6a;
-        --groove-hover: rgb(192, 202, 245);
-        --hourly-bg: #9ece6a;
-        --icon-dim: rgb(192, 202, 245);
-        --lavender: #bb9af7;
-        --maroon: #f7768e;
-        --mauve: #bb9af7;
-        --media-bg: rgb(31, 35, 53);
-        --muted: #565f89;
-        --muted-alt: #6f7bb6;
-        --paused: #565f89;
-        --popup-bg: rgb(31, 35, 53);
-        --popup-hover: rgb(36, 40, 59);
-        --spotify: #9ece6a;
-        --subtext0: #a9b1d6;
-        --subtext1: #c0caf5;
-        --surface0: #1f2335;
-        --surface1: #24283b;
-        --surface2: #3b4261;
-        --teal: #1abc9c;
-        --text: #c0caf5;
-        --text-dim: rgb(192, 202, 245);
-        --text-muted: rgb(169, 177, 214);
-        --transparent: #1a1b26;
-        --transparent-base: #1a1b26;
-        --transparent-dark: #1a1b26;
-    --weather-bg: rgb(26, 27, 38);
+        --blue: #9ccfd8;
+        --border-dark: #21202e;
+        --btn-hover-bg: rgb(224, 222, 244);
+        --button-bg: #26233a;
+        --button-hover: rgb(224, 222, 244);
+        --button-pressed: #403d52;
+        --calendar-bg: rgb(31, 29, 46);
+        --calendar-text: rgb(144, 140, 170);
+        --cancel-icon: rgb(235, 111, 146);
+        --cancel-label: rgb(235, 111, 146);
+        --card-bg: rgb(31, 29, 46);
+        --chart: #f6c177;
+        --day-active-bg: rgb(33, 32, 46);
+        --day-active-border: rgb(64, 61, 82);
+        --disabled: #524f67;
+        --edge: #9ccfd8;
+        --firefox: #eb6f92;
+        --gray: #6e6a86;
+        --green: #31748f;
+        --groove-hover: rgb(224, 222, 244);
+        --hourly-bg: #31748f;
+        --icon-dim: rgb(224, 222, 244);
+        --lavender: #c4a7e7;
+        --maroon: #eb6f92;
+        --mauve: #c4a7e7;
+        --media-bg: rgb(31, 29, 46);
+        --muted: #6e6a86;
+        --muted-alt: #908caa;
+        --paused: #6e6a86;
+        --popup-bg: rgb(31, 29, 46);
+        --popup-hover: rgb(38, 35, 58);
+        --spotify: #31748f;
+        --subtext0: #e0def4;
+        --subtext1: #e0def4;
+        --surface0: #1f1d2e;
+        --surface1: #26233a;
+        --surface2: #403d52;
+        --teal: #ebbcba;
+        --text: #e0def4;
+        --text-dim: rgb(224, 222, 244);
+        --text-muted: rgb(144, 140, 170);
+        --transparent: #191724;
+        --transparent-base: #191724;
+        --transparent-dark: #191724;
+    --weather-bg: rgb(25, 23, 36);
     --white: #ffffff;
-        --yellow: #e0af68;
+        --yellow: #f6c177;
             }
 
+/* ╔══════════════════════════════════════════════════════════════╗
+   ║  2 · BASE / GLOBAL                                           ║
+   ╚══════════════════════════════════════════════════════════════╝ */
 * {
   font-size: 11px;
   font-family: "Iosevka NFP";
@@ -63,211 +69,136 @@
   padding: 0;
 }
 
-.glazewm-workspaces {
-  margin: 0 4px;
-}
-
-.glazewm-workspaces .ws-btn {
-  font-size: 0;
-  width: 10px;
-  height: 5px;
-  min-width: 10px;
-  max-width: 10px;
-  background-color: var(--surface2);
-  border: none;
-  border-radius: 2px;
-  padding: 0;
-  margin: 0 2px;
-  overflow: hidden;
-  color: transparent !important;
-}
-
-.glazewm-workspaces .ws-btn .label,
-.glazewm-workspaces .ws-btn .name,
-.glazewm-workspaces .ws-btn .display-name,
-.glazewm-workspaces .ws-btn span {
-  display: none !important;
-}
-
-.glazewm-workspaces .ws-btn * {
-  display: none !important;
-}
-
-.glazewm-workspaces .ws-btn.active_populated,
-.glazewm-workspaces .ws-btn.active_empty {
-  background-color: var(--blue);
-  width: 22px;
-  height: 5px;
-  max-width: 22px;
-  overflow: hidden;
-  color: transparent !important;
-  border-radius: 2px;
-}
-
-.glazewm-workspaces .ws-btn.populated {
-  background-color: var(--surface2);
-}
-
-.glazewm-workspaces .ws-btn.empty {
-  background-color: var(--surface0);
-}
-
-.glazewm-workspaces .ws-btn:hover,
-.glazewm-workspaces .ws-btn.populated:hover,
-.glazewm-workspaces .ws-btn.empty:hover {
-  background-color: var(--blue);
-}
-
-.glazewm-tiling-direction {
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-}
-
-.glazewm-tiling-direction .btn {
-  font-size: 18px;
-  width: 14px;
-  padding: 0 4px 0 4px;
-  color: var(--text);
-  border: none;
-}
-
-.glazewm-tiling-direction .btn:hover {
-  background-color: var(--gray);
-}
-
-.uptime {
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: var(--text-muted);
-  font-weight: 600;
-}
-
-.power-menu-popup .button {
-  padding: 0;
-  width: 160px;
-  height: 240px;
-  border-radius: 4px;
-  background-color: var(--popup-bg);
-  color: var(--white);
-  border: 4px solid var(--transparent);
-}
-
-.power-menu-popup .button.hover {
-  background-color: var(--popup-hover);
-  border: 4px solid var(--popup-hover);
-}
-
-.power-menu-popup .button .label {
-  margin-bottom: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--text-dim);
-}
-
-.power-menu-popup .button .icon {
-  font-size: 64px;
-  padding-top: 54px;
-  color: var(--icon-dim);
-}
-
-.power-menu-popup .button.cancel {
-  height: 20px !important;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.power-menu-popup .button.cancel .icon {
-  font-size: 24px !important;
-  padding-top: 0px !important;
-  color: var(--cancel-icon);
-}
-
-.power-menu-popup .button.cancel .label {
-  margin-bottom: 0px !important;
-  color: var(--cancel-label);
-}
-
 .icon {
   font-size: 16px;
 }
 
-.start-menu .icon {
-  font-size: 18px;
-  color: var(--blue);
+/* ╔══════════════════════════════════════════════════════════════╗
+   ║  3 · BAR                                                     ║
+   ╚══════════════════════════════════════════════════════════════╝ */
+.yasb-bar {
+  margin: 0;
+  padding: 0;
 }
 
+/* ╔══════════════════════════════════════════════════════════════╗
+   ║  4 · WIDGETS                                                 ║
+   ╚══════════════════════════════════════════════════════════════╝ */
+
+/* ── 4.3 · Clock ────────────────────────────────────────────── */
 .clock-widget .icon {
   color: var(--blue);
   font-size: 14px;
 }
 
-.weather-card {
-  background-color: var(--weather-bg);
+.clock-widget .label {
+  font-size: 13px;
+  padding: 0 18px -1.5px 18px;
+  background-color: var(--base);
+  color: var(--blue);
+  border-radius: 1000px;
 }
 
-.weather-card-today {
-  border: 1px solid var(--border-dark);
-  border-radius: 8px;
-  background-color: var(--card-bg);
+/* :: Calendar popup ──────────────────────────────────────────── */
+.calendar {
+  background-color: var(--calendar-bg);
 }
 
-.weather-card-today .label {
+.calendar .calendar-table,
+.calendar .calendar-table::item {
+  background-color: var(--transparent-base);
+  color: var(--calendar-text);
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.calendar .calendar-table::item:selected {
+  color: var(--white);
+  background-color: var(--accent);
+  border-radius: 10px;
+}
+
+.calendar .day-label {
+  margin-top: 20px;
+}
+
+.calendar .day-label,
+.calendar .month-label,
+.calendar .date-label,
+.calendar .week-label,
+.calendar .holiday-label {
+  font-size: 16px;
+  color: var(--white);
+  font-weight: 700;
+  min-width: 180px;
+  max-width: 180px;
+}
+
+.calendar .week-label,
+.calendar .holiday-label {
   font-size: 12px;
+  font-weight: 600;
+  color: var(--calendar-text);
 }
 
-.weather-card-today .label.location {
-  font-size: 24px;
+.calendar .holiday-label {
+  color: var(--calendar-text);
   font-weight: 700;
 }
 
-.weather-card-today .label.alert {
-  font-size: 12px;
-  font-weight: 700;
-  background-color: var(--alert-bg);
-  border: 1px solid var(--alert-border);
-  color: var(--alert-text);
-  border-radius: 6px;
-  padding: 5px 0;
+.calendar .month-label {
+  font-weight: normal;
 }
 
-.weather-card-day {
-  border: 1px solid var(--surface1);
-  border-radius: 8px;
-  background-color: var(--card-bg);
+.calendar .date-label {
+  font-size: 88px;
+  font-weight: 900;
+  color: var(--white);
+  margin-top: -20px;
 }
 
-.weather-card-day.active {
-  background-color: var(--day-active-bg);
-  border: 1px solid var(--day-active-border);
+/* ── 4.4 · Media ────────────────────────────────────────────── */
+/* Widget on bar (hidden, clickable to open menu) */
+.media-widget {
+  margin-right: 8px;
+  padding: 4px;
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  background-color: var(--base);
+  border-radius: 1000px;
 }
 
-.weather-card-day:hover {
-  background-color: var(--day-active-bg);
+.media-widget .label {
+  font-size: 0;
+  color: transparent;
 }
 
-.weather-card-day .label {
-  font-size: 12px;
+.media-widget .label.alt {
+  color: text;
 }
 
-.weather-card .hourly-container {
-  border: 1px solid var(--border-dark);
-  background-color: var(--hourly-bg);
-  border-radius: 8px;
-  min-height: 150px;
+.media-widget .btn {
+  padding: 0;
+  margin: 0 -6px;
+  padding-left: 4px;
 }
 
-.weather-card .hourly-data {
-  background-color: var(--chart);
-  font-size: 12px;
-  font-weight: bold;
+.media-widget .widget-container QLabel {
+  min-width: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  max-height: 12px;
 }
 
+/* :: Media menu popup ────────────────────────────────────────── */
 .media-menu {
   min-width: 420px;
   max-width: 420px;
-  background-color: var(--media-bg);
+  background-color: var(--base);
 }
 
 .media-menu .title,
@@ -336,6 +267,7 @@
 
 .media-menu .btn.play {
   background-color: var(--btn-hover-bg);
+  color: var(--base);
   font-size: 20px;
 }
 
@@ -378,158 +310,53 @@
   height: 4px;
 }
 
-.media-widget .btn {
+/* ── 4.5 · Power Menu ───────────────────────────────────────── */
+.power-menu-popup .button {
   padding: 0;
-  margin: 0 -6px;
-  padding-left: 4px;
-}
-
-.pomodoro-widget {
-  padding: 0 0 0 0;
-}
-
-.pomodoro-widget .icon {
-  font-size: 12px;
-  padding-right: 4px;
-}
-
-.pomodoro-widget .label.paused,
-.pomodoro-widget .icon.paused {
-  color: var(--paused);
-}
-
-.pomodoro-widget .label.work,
-.pomodoro-widget .icon.work {
-  color: var(--green);
-}
-
-.pomodoro-widget .label.break,
-.pomodoro-widget .icon.break {
-  color: var(--blue);
-}
-
-.pomodoro-menu {
-  background-color: var(--card-bg);
-  border-radius: 8px;
-}
-
-.pomodoro-menu .header {
-  font-size: 16px;
-  font-weight: 600;
-  max-height: 0px;
-  color: var(--white);
-}
-
-.pomodoro-menu .status {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--text);
-}
-
-.pomodoro-menu .session {
-  font-size: 12px;
-  color: var(--subtext0);
-}
-
-.pomodoro-menu .button {
-  background-color: var(--button-bg);
-  color: var(--text);
-  border: none;
+  width: 160px;
+  height: 240px;
   border-radius: 4px;
-  padding: 6px 12px;
-}
-
-.pomodoro-menu .button.start {
-  background-color: var(--button-bg);
-}
-
-.pomodoro-menu .button.reset {
-  background-color: var(--button-bg);
-}
-
-.pomodoro-menu .button:hover {
-  background-color: var(--button-hover);
-}
-
-.pomodoro-menu .button.pause {
-  background-color: var(--green);
-  color: var(--base);
-}
-
-.pomodoro-menu .button:pressed {
-  background-color: var(--button-pressed);
-}
-
-.calendar {
-  background-color: var(--calendar-bg);
-}
-
-.calendar .calendar-table,
-.calendar .calendar-table::item {
-  background-color: var(--transparent-base);
-  color: var(--calendar-text);
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-}
-
-.calendar .calendar-table::item:selected {
+  background-color: var(--popup-bg);
   color: var(--white);
-  background-color: var(--accent);
-  border-radius: 10px;
+  border: 4px solid var(--transparent);
 }
 
-.calendar .day-label {
-  margin-top: 20px;
+.power-menu-popup .button.hover {
+  background-color: var(--popup-hover);
+  border: 4px solid var(--popup-hover);
 }
 
-.calendar .day-label,
-.calendar .month-label,
-.calendar .date-label,
-.calendar .week-label,
-.calendar .holiday-label {
+.power-menu-popup .button .label {
+  margin-bottom: 8px;
   font-size: 16px;
-  color: var(--white);
-  font-weight: 700;
-  min-width: 180px;
-  max-width: 180px;
-}
-
-.calendar .week-label,
-.calendar .holiday-label {
-  font-size: 12px;
   font-weight: 600;
-  color: var(--calendar-text);
+  color: var(--text-dim);
 }
 
-.calendar .holiday-label {
-  color: var(--calendar-text);
-  font-weight: 700;
+.power-menu-popup .button .icon {
+  font-size: 64px;
+  padding-top: 54px;
+  color: var(--icon-dim);
 }
 
-.calendar .month-label {
-  font-weight: normal;
+.power-menu-popup .button.cancel {
+  height: 20px !important;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.calendar .date-label {
-  font-size: 88px;
-  font-weight: 900;
-  color: var(--white);
-  margin-top: -20px;
+.power-menu-popup .button.cancel .icon {
+  font-size: 24px !important;
+  padding-top: 0px !important;
+  color: var(--cancel-icon);
 }
 
-/* ─── Bar (floating pill) ─── */
-.yasb-bar {
-  padding-top: 3px;
-  margin: 0;
-  background-color: var(--base);
-  /* border-bottom-left-radius: 20px; */
-  /* border-bottom-right-radius: 20px; */
-  border-radius: 1000px;
+.power-menu-popup .button.cancel .label {
+  margin-bottom: 0px !important;
+  color: var(--cancel-label);
 }
 
-/* ─── Power Menu (hidden, keyboard-only access) ─── */
 .power-menu-widget {
   padding: 0;
   margin: 0;
@@ -540,20 +367,6 @@
 .power-menu-widget .label {
   font-size: 0;
   color: transparent;
-}
-
-/* ─── Cava ─── */
-.cava-widget {
-  padding: 0;
-  margin: 0 4px;
-}
-
-/* ─── Clock ─── */
-.clock-widget .label {
-  font-size: 13px;
-  padding: 0 8px;
-  margin: 0 4px;
-  color: var(--blue);
 }
 
 /* ─── Power Menu (compact popup) ─── */
@@ -636,92 +449,336 @@
   color: var(--white);
 }
 
-/* ─── Weather Widget ─── */
-.weather-widget {
-  padding: 0;
+/* ── 4.6 · Control Center ───────────────────────────────────── */
+/* Widget on bar (hidden, clickable to open menu) */
+.control-center-widget .icon,
+.control-center-widget .label {
+  margin-left: 8px;
+  font-size: 12px;
+  color: var(--text);
+  background-color: var(--base);
+  padding: 9px 9px 9px 9px;
+  border-radius: 1000px;
+}
+
+/* :: Menu popup ──────────────────────────────────────────────── */
+.control-center-menu {
+  min-width: 350px;
+  max-width: 350px;
+  background-color: var(--base);
+}
+
+/* Shared section base */
+.control-center-menu .section {
+  background-color: transparent;
+  padding: 12px;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.control-center-menu .section.system-controls {
+  padding: 12px 12px 8px 12px;
+}
+
+.control-center-menu .section.media,
+.control-center-menu .section.power {
+  border-bottom: none;
+}
+
+/* System controls */
+.control-center-menu .section.system-controls .button {
+  background-color: var(--surface1);
+  border: none;
+  border-radius: 12px;
+  min-height: 32px;
+  max-height: 32px;
+  min-width: 32px;
+  max-width: 32px;
+  font-size: 14px;
+  color: var(--text-dim);
+  transition:
+    background-color 0.08s,
+    opacity 0.08s;
+}
+
+.control-center-menu .section.system-controls .button:hover {
+  background-color: var(--surface2);
+  color: var(--white);
+}
+
+.control-center-menu .section.system-controls .button:pressed {
+  opacity: 0.5;
+}
+
+/* Quick actions */
+.control-center-menu .section.quick-actions .button {
   margin: 0 4px;
 }
 
-.weather-widget .widget-container .icon {
-  font-size: 12px;
-  color: var(--accent);
+.control-center-menu .section.quick-actions .button .icon {
+  font-size: 16px;
+  background-color: var(--surface1);
+  border: 1px solid var(--border-dark);
+  min-height: 44px;
+  border-radius: 10px;
+  color: var(--text-dim);
+  transition:
+    background-color 0.08s,
+    opacity 0.08s;
 }
 
-.weather-widget .widget-container .label {
+.control-center-menu .section.quick-actions .button .icon:hover {
+  background-color: var(--surface2);
+  border: 1px solid var(--surface2);
+  color: var(--white);
+}
+
+.control-center-menu .section.quick-actions .button.active .icon {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  color: var(--base);
+}
+
+.control-center-menu .section.quick-actions .button.active .icon:hover {
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+  color: var(--base);
+}
+
+.control-center-menu .section.quick-actions .button .icon:pressed,
+.control-center-menu .section.quick-actions .button.active .icon:pressed {
+  opacity: 0.5;
+}
+
+.control-center-menu .section.quick-actions .button .title {
   font-size: 10px;
-  padding: 0 6px;
-  color: var(--accent);
-}
-
-.weather-widget .widget-container .label.alt {
+  margin: 5px 0 8px 0;
+  padding: 0;
+  font-weight: 600;
   color: var(--text-muted);
 }
 
-/* ─── Volume Widget ─── */
-.volume-widget {
-  padding: 0 6px;
-  margin: 2px 6px;
-  background-color: var(--surface0);
-  border-radius: 1000px;
+.control-center-menu .section.quick-actions .button.disabled .title,
+.control-center-menu .section.quick-actions .button.disabled .icon {
+  opacity: 0.4;
+  color: var(--disabled);
 }
 
-.volume-widget .widget-container .icon {
+/* Sliders */
+.control-center-menu .section.sliders .slider {
+  background-color: transparent;
+  border: none;
+  min-height: 32px;
+  margin: 0 4px;
+}
+
+.control-center-menu .section.sliders .slider .icon {
+  font-size: 15px;
+  color: var(--icon-dim);
+  min-width: 28px;
+}
+
+.control-center-menu .section.sliders .slider .value {
+  min-width: 32px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.control-center-menu .section.sliders .slider .source-selector {
   font-size: 12px;
-  color: var(--yellow);
+  color: var(--text-muted);
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background-color: transparent;
+  margin-left: 4px;
+  transition:
+    background-color 0.08s,
+    opacity 0.08s;
 }
 
-.volume-widget .widget-container .label {
+.control-center-menu .section.sliders .slider .source-selector:hover {
+  background-color: var(--surface2);
+  color: var(--white);
+}
+
+.control-center-menu .section.sliders .slider .source-selector:pressed {
+  opacity: 0.5;
+}
+
+.control-center-menu .section.sliders .slider .slider-control::groove {
+  background: var(--surface2);
+  height: 3px;
+  border-radius: 2px;
+}
+
+.control-center-menu .section.sliders .slider .slider-control::sub-page {
+  background: var(--blue);
+  border-radius: 2px;
+}
+
+.control-center-menu .section.sliders .slider .slider-control::handle {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: var(--white);
+  margin: -5px 0;
+}
+
+/* Power plan & mode */
+.control-center-menu .section.power .plan-name,
+.control-center-menu .section.power .mode-name {
+  background-color: var(--surface1);
+  border: 1px solid var(--border-dark);
+  border-radius: 8px;
+  min-height: 36px;
+  margin: 0 4px;
+  padding: 6px 10px;
+  transition:
+    background-color 0.08s,
+    opacity 0.08s;
+}
+
+.control-center-menu .section.power .plan-name:hover,
+.control-center-menu .section.power .mode-name:hover {
+  background-color: var(--surface2);
+}
+
+.control-center-menu .section.power .plan-name:pressed,
+.control-center-menu .section.power .mode-name:pressed {
+  opacity: 0.5;
+}
+
+.control-center-menu .section.power .mode-name.disabled,
+.control-center-menu .section.power .mode-name.disabled:hover {
+  opacity: 0.4;
+  background-color: var(--surface1);
+}
+
+.control-center-menu .section.power .plan-name .title,
+.control-center-menu .section.power .mode-name .title {
   font-size: 10px;
-  padding: 0 6px;
-  color: var(--yellow);
-}
-
-.volume-widget .widget-container .label.alt {
+  font-weight: 600;
   color: var(--text-muted);
 }
 
-/* ─── WiFi Widget ─── */
-.wifi-widget {
-  padding: 0 6px;
-  margin: 2px 6px;
-  background-color: var(--surface0);
-  border-radius: 1000px;
-}
-
-.wifi-widget .widget-container .icon {
+.control-center-menu .section.power .plan-name .subtext,
+.control-center-menu .section.power .mode-name .subtext {
   font-size: 12px;
-  color: var(--yellow);
+  font-weight: 600;
+  color: var(--text);
 }
 
-.wifi-widget .widget-container .label {
-  font-size: 9px;
-  padding: 0 6px;
-  color: var(--yellow);
+.control-center-menu .section.power .plan-name .icon,
+.control-center-menu .section.power .mode-name .icon {
+  color: var(--text-muted);
+  font-size: 13px;
 }
 
-.wifi-widget .widget-container .label.alt {
+/* Media section */
+.control-center-menu .section.media {
+  background-color: var(--base);
+  padding: 12px;
+}
+
+.control-center-menu .section.media .track-info {
+  padding-left: 8px;
+}
+
+.control-center-menu .section.media .title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.control-center-menu .section.media .subtext {
+  font-size: 12px;
+  font-weight: 600;
   color: var(--text-muted);
 }
 
-/* ─── Battery Widget ─── */
-.battery-widget {
-  padding: 0 6px;
+.control-center-menu .section.media .button {
+  font-size: 15px;
+  background-color: transparent;
+  min-width: 32px;
+  min-height: 32px;
+  max-width: 32px;
+  max-height: 32px;
+  border-radius: 16px;
+  margin: 0 0 0 4px;
+  color: var(--text-dim);
+  transition:
+    background-color 0.08s,
+    opacity 0.08s;
+}
+
+.control-center-menu .section.media .button:hover {
+  background-color: var(--surface2);
+  color: var(--white);
+}
+
+.control-center-menu .section.media .button.play {
+  background-color: var(--btn-hover-bg);
+  color: var(--base);
+}
+
+.control-center-menu .section.media .button.play:hover {
+  background-color: var(--button-pressed);
+  color: var(--white);
+}
+
+.control-center-menu .section.media .button:pressed {
+  opacity: 0.5;
+}
+
+.control-center-menu .section.media .button.disabled,
+.control-center-menu .section.media .button.disabled:hover {
+  opacity: 0.4;
+  color: var(--disabled);
+  background-color: transparent;
+}
+
+/* Context menus (dropdowns inside control center) */
+.control-center-menu .context-menu {
+  background-color: var(--surface1);
+  padding: 4px 0;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--text);
+}
+
+.control-center-menu .context-menu::item {
+  background-color: transparent;
+  padding: 6px 12px;
   margin: 2px 6px;
-  background-color: var(--surface0);
-  border-radius: 1000px;
+  border-radius: 4px;
+  min-width: 100px;
 }
 
-.battery-widget .widget-container .icon {
-  font-size: 14px;
-  color: var(--green);
+.control-center-menu .context-menu::item:selected {
+  background-color: var(--surface2);
+  color: var(--white);
 }
 
-.battery-widget .widget-container .label {
-  font-size: 10px;
-  padding: 0 6px;
-  color: var(--green);
+.control-center-menu .context-menu::separator {
+  height: 1px;
+  background-color: var(--surface2);
+  margin: 4px 0;
 }
 
-.battery-widget .widget-container .label.alt {
-  color: var(--text-muted);
+.control-center-menu .context-menu::indicator:unchecked {
+  width: 4px;
+  height: 12px;
+  margin-left: 0;
+  color: transparent;
+  background-color: transparent;
+}
+
+.control-center-menu .context-menu::indicator:checked {
+  width: 4px;
+  height: 12px;
+  background-color: var(--blue);
+  border-radius: 2px;
+  margin-left: 0;
 }

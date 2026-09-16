@@ -18,7 +18,7 @@ bars:
       always_on_top: false
       windows_app_bar: true
     dimensions:
-      width: 105
+      width: 100%
       height: 28
     padding:
       top: 8
@@ -26,80 +26,61 @@ bars:
       bottom: 0
       right: 0
     widgets:
-      center: ["clock", "power_menu"]
+      center: ["media", "clock", "control_center", "power_menu"]
 
 widgets:
-  volume:
-    type: "yasb.volume.VolumeWidget"
+  media:
+    type: "yasb.media.MediaWidget"
     options:
-      label: "<span>{icon}</span> {level}"
-      label_alt: "{level}"
-      volume_icons:
-        - "" # Muted
-        - "" # 0–10%
-        - "" # 11–30%
-        - "" # 31–60%
-        - "" # 61–100%
+      label: ""
+      label_alt: ""
+      separator: ""
+      hide_empty: false
+      show_thumbnail: true
+      controls_only: false
+      controls_left: false
+      controls_hide: true
       keybindings:
         - keys: "ctrl+alt+m"
-          action: "toggle_mute"
-        - keys: "ctrl+alt+up"
-          action: "volume_up"
-        - keys: "ctrl+alt+down"
-          action: "volume_down"
-      container_padding:
-        top: 0
-        left: 8
-        bottom: 0
-        right: 8
-  wifi:
-    type: "yasb.wifi.WifiWidget"
-    options:
-      label: "<span>{wifi_icon}</span>"
-      label_alt: "{wifi_name} {wifi_strength}%"
-      container_padding:
-        top: 0
-        left: 8
-        bottom: 0
-        right: 8
-  battery:
-    type: "yasb.battery.BatteryWidget"
-    options:
-      label: "<span>{icon}</span> {percent}%"
-      label_alt: "<span>{icon}</span> {percent}% | {time_remaining}"
-      container_padding:
-        top: 0
-        left: 8
-        bottom: 0
-        right: 8
-  glazewm-workspaces:
-    type: "glazewm.workspaces.GlazewmWorkspacesWidget"
-    options:
-      container_padding:
-        top: 0
-        left: 8
-        bottom: 0
-        right: 8
-  cava:
-    type: "yasb.cava.CavaWidget"
-    options:
-      bar_height: 12
-      bars_number: 4
-      bar_spacing: 2
-      bar_width: 2
-      sensitivity: 75
-      gradient: 1
-      gradient_color_1: "#bb9af7"
-      gradient_color_2: "#7aa2f7"
-      gradient_color_3: "#9ece6a"
-      framerate: 60
-      sleep_timer: 2
-      hide_empty: true
-      container_padding:
-        top: 0
-        left: 8
-        bottom: 0
-        right: 0
+          action: "toggle_media_menu"
+      max_field_size:
+        label: 15
+        label_alt: 22
+      thumbnail_alpha: 200
+      thumbnail_padding: 4
+      thumbnail_corner_radius: 100
+      symmetric_corner_radius: true
+      icons:
+        prev_track: "\uf04a"
+        next_track: "\uf04e"
+        play: "\uf04b"
+        pause: "\uf04c"
+      media_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "center"
+        direction: "down"
+        offset_top: -29
+        offset_left: -199
+        thumbnail_corner_radius: 8
+        thumbnail_size: 60
+        max_title_size: 60
+        max_artist_size: 20
+        max_source_size: 16
+        show_source: true
+      media_menu_icons:
+        prev_track: "\uf04a"
+        next_track: "\uf04e"
+        play: "\uf04b"
+        pause: "\uf04c"
+        mute: "\uf026"
+        unmute: "\uf028"
+      callbacks:
+        on_left: "toggle_media_menu"
+        on_middle: "toggle_play_pause"
+        on_right: "toggle_label"
   clock:
     type: "yasb.clock.ClockWidget"
     options:
@@ -134,7 +115,7 @@ widgets:
         alignment: "center"
         direction: "down"
         offset_top: -29
-        offset_left: -30
+        offset_left: -70
       profile_image_size: 64
       buttons:
         lock: [" ", "Lock"]
@@ -144,3 +125,88 @@ widgets:
         cancel: ["󰜺 ", "Cancel"]
       callbacks:
         on_left: "toggle_power_menu"
+  control_center:
+    type: "yasb.control_center.ControlCenterWidget"
+    options:
+      label: "<span>\uf013</span>"
+      tooltip: true
+      keybindings:
+        - keys: "ctrl+alt+o"
+          action: "toggle_menu"
+      sections_order:
+        - "system_controls"
+        - "quick_actions"
+        - "sliders"
+        - "power"
+      popup:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "center"
+        direction: "down"
+        offset_top: -29
+        offset_left: 164
+      sections:
+        system_controls:
+          show: true
+          profile_image_size: 28
+          power_icon: "\uf011"
+          lock_icon: "\uf023"
+          settings_icon: "\uf013"
+        quick_actions:
+          show: true
+          columns: 3
+          label_position: "default"
+          actions:
+            - id: "toggle_dnd"
+              label: "Do Not Disturb"
+              icon: "\uf1f6"
+            - id: "toggle_mute"
+              label: "Mute"
+              icon: "\uf026"
+            - id: "toggle_mic_mute"
+              label: "Mic Mute"
+              icon: "\uf131"
+            - id: "screenshot"
+              label: "Screenshot"
+              icon: "\uf030"
+            - id: "touch_keyboard"
+              label: "Keyboard"
+              icon: "\uf11c"
+            - id: "toggle_theme"
+              label: "Dark Mode"
+              icon: "\uf186"
+        sliders:
+          show: true
+          brightness:
+            show_slider: true
+            icon: "\uf185"
+            show_source_selector: true
+            source_selector_icon: "\uf078"
+          volume:
+            show_slider: true
+            icon: "\uf028"
+            show_source_selector: true
+            source_selector_icon: "\uf078"
+          microphone:
+            show_slider: true
+            icon: "\uf130"
+            show_source_selector: true
+            source_selector_icon: "\uf078"
+        media:
+          show: true
+          thumbnail_size: 36
+          thumbnail_radius: 4
+          icons:
+            prev_track: "\uf04a"
+            next_track: "\uf04e"
+            play: "\uf04b"
+            pause: "\uf04c"
+        power:
+          show: true
+          power_plan_title: "Power Plan"
+          power_mode_title: "Power Mode"
+          button_menu_icon: "\uf078"
+      callbacks:
+        on_left: "toggle_menu"

@@ -35,7 +35,7 @@ widgets:
       label: ""
       label_alt: ""
       separator: ""
-      hide_empty: false
+      hide_empty: true
       show_thumbnail: true
       controls_only: false
       controls_left: false

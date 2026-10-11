@@ -29,7 +29,7 @@ git config --global --list
 ## 3. Install Neovim
 
 ```powershell
-winget install --id Neovim.Neovim --exact --source winget
+winget install --id Neovim.Neovim --exact --version 0.12.0
 ```
 
 Clone my Neovim configuration:

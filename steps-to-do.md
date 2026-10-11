@@ -47,6 +47,7 @@ nvim --version
 ## 4. Install CLI Tools
 
 ```powershell
+Install-Module PSReadLine -Force
 winget install --id Starship.Starship --exact --source winget
 winget install --id junegunn.fzf --exact --source winget
 winget install --id BurntSushi.ripgrep.MSVC --exact --source winget

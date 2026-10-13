@@ -13,6 +13,7 @@ winget install --id Microsoft.PowerShell --exact --source winget
 ## 2. Install Git
 
 ```powershell
+winget install -e --id tree-sitter.tree-sitter-cli
 winget install --id Git.Git --exact --source winget
 
 git config --global user.name "name"
